@@ -1,4 +1,23 @@
-img {
-        width : 375px;
-        height: 63px;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiaire: #99E2D0;
+$color-logo-back : white;
+$color-position-back : #EAEAEA;
+
+header{
+    .imglogohaut{
+        width:210px;
+        height:35px;
+        background-color:var($color-logo-back);
+        display:flex;
+        justify-content: center;
+        align-items: center;;
     }
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+    .searchposition{
+        background-color: var($color-position-back);
+    }
+}

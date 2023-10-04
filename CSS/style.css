@@ -1,7 +1,19 @@
+
 body{
     background-color: white;
 }
-img {
+header .imglogohaut {
     width: 210px;
-    height: 63px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .form {
+    display: flex;
+    justify-content: center;
+  }
+  header .searchposition {
+    background-color: #EAEAEA;
   }

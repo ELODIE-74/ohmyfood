@@ -1,4 +1,15 @@
-img {
-  width: 375px;
-  height: 63px;
+header .imglogohaut {
+  width: 210px;
+  height: 35px;
+  background-color: var(white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .form {
+  display: flex;
+  justify-content: center;
+}
+header .searchposition {
+  background-color: var(#EAEAEA);
 }/*# sourceMappingURL=header.css.map */
