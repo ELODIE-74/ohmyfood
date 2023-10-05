@@ -1,0 +1,9 @@
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 350px;
+  background-color: #F0F0F2;
+}/*# sourceMappingURL=homepage.css.map */

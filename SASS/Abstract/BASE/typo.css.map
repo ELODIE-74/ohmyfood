@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["typo.scss"],"names":[],"mappings":"AACA;EACI;;AAEJ;EACI;;AAEJ;EACI","sourcesContent":["body{\r\n.logoposition{\r\n    font-family: 'Shrikhand';\r\n}\r\np{\r\n    font-family: 'Roboto';\r\n}\r\nh1{\r\n    font-weight: bold;\r\n}\r\n}"]}

@@ -1,21 +1,52 @@
-header .imglogohaut {
-    width: 150px;
-    height: 35px;
-    background-color: white;
+body .logoposition {
+    font-family: "Shrikhand";
+  }
+  body p {
+    font-family: "Roboto";
+  }
+  body h1 {
+    font-weight: bold;
+  }
+/*header homepage*/
+header {
     display: flex;
-    justify-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  header .imglogohaut {
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   header .searchcity {
-    background-color: grey;
+    background-color: #D3D3D3 ;
+    border-top: 4px solid black;
     width: 100%;
     height: 40px;
-  }
-  header .searchcity .logoposition {
-    width: 20px;
-    height: 20px;
+    position: relative;
+    border: 1px;
+    text-align: center;
     display: flex;
     justify-content: center;
-  }
-  header .searchcity .textsearch {
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    margin: 0;
+    padding: 0.75rem;
     font-size: medium;
+}
+header .searchcity .logoposition {
+  margin-right: 10px;
+  padding-top: 10px;
+}
+/*section réservation*/
+.reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
