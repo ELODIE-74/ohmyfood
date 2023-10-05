@@ -1,0 +1,34 @@
+$color-primary : #9356DC;
+$color-secondary : #FF79DA;
+$color-tertiaire : #99E2D0;
+$color-positionlogo-header : grey;
+$color-back-header: white;
+
+header{
+    .imglogohaut{
+        width : 150px;
+        height: 35px;
+        background-color: var($color-back-header);
+        display: flex;
+        justify-items: center;
+    }
+    .searchcity{
+        background-color: var($color-positionlogo-header);
+        width : 100%;
+        height:40px;
+        .logoposition{
+            width : 20px;
+            height : 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .textsearch{
+            font-size: medium;
+        }
+    }
+    
+
+
+
+
+}

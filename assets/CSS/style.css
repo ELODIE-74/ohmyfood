@@ -1,19 +1,21 @@
-
-body{
-    background-color: white;
-}
 header .imglogohaut {
-    width: 210px;
+    width: 150px;
     height: 35px;
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
   }
-  header .form {
+  header .searchcity {
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+  }
+  header .searchcity .logoposition {
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
   }
-  header .searchposition {
-    background-color: #EAEAEA;
+  header .searchcity .textsearch {
+    font-size: medium;
   }

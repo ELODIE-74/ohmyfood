@@ -1,0 +1,21 @@
+header .imglogohaut {
+  width: 150px;
+  height: 35px;
+  background-color: var(white);
+  display: flex;
+  justify-items: center;
+}
+header .searchcity {
+  background-color: var(grey);
+  width: 100%;
+  height: 40px;
+}
+header .searchcity .logoposition {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+header .searchcity .textsearch {
+  font-size: medium;
+}/*# sourceMappingURL=header.css.map */
