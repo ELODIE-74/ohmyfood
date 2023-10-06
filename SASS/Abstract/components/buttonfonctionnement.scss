@@ -1,47 +1,34 @@
-.Fonctionnement{
-     /*display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-*/
-    .Title{
-        font-size: x-large;
-        font-weight: bold;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    .chiffre{
-        font-size: bold;
-        color:white;
-        background-color: var(#9356DC);
-        text-align: center;
-        border-radius: 20px;
-        margin-right: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .btnPaintMenu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        width : 300px;
-        height: 100px;
-        background-color: var(#F0F0F2);
-        color: black;
-        border-radius: 1.5em ;
-        padding : 10px 12px 10px 12px;
-        font-size: large;
-        text-decoration: none;
-        cursor:pointer;
-
-    }
-
-
-
-
-
-}
+.Fonctionnement {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    
+  }
+  .Fonctionnement .Title {
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .Fonctionnement .chiffre {
+    font-size: bold;
+    color: white;
+    background-color: var(#9356DC);
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  .Fonctionnement .btnPaintMenu {
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    background-color: var(#F0F0F2);
+    color: black;
+    border-radius: 1.5em;
+    padding: 10px 12px 10px 12px;
+    font-size: large;
+    text-decoration: none;
+    cursor: pointer;
+  }

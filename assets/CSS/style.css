@@ -74,6 +74,7 @@ header .searchcity .logoposition {
   justify-content: center;
   align-items: center;
 }
+
 .Fonctionnement .Title {
   font-size: x-large;
   font-weight: bold;
@@ -81,6 +82,7 @@ header .searchcity .logoposition {
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .Fonctionnement .chiffre {
   font-size: bold;
   color: white;
@@ -89,6 +91,7 @@ header .searchcity .logoposition {
   border-radius: 20px;
   margin-right: 10px;
 }
+
 .Fonctionnement .btnPaintMenu {
   text-align: center;
   width: 300px;

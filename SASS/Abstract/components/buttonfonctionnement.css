@@ -1,10 +1,10 @@
 .Fonctionnement {
-  /*display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .Fonctionnement .Title {
   font-size: x-large;
   font-weight: bold;
@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .Fonctionnement .chiffre {
   font-size: bold;
   color: white;
@@ -19,15 +20,9 @@
   text-align: center;
   border-radius: 20px;
   margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
+
 .Fonctionnement .btnPaintMenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   text-align: center;
   width: 300px;
   height: 100px;
