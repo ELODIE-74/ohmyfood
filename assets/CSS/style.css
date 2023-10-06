@@ -88,8 +88,11 @@ header .searchcity .logoposition {
   color: white;
   background-color:#9356DC;
   text-align: center;
-  border-radius: 40px;
+  border-radius: 100px;
   margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
 }
 
 .Fonctionnement .btnPaintMenu {
