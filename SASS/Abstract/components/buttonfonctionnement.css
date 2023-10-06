@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .Fonctionnement .Title {
   font-size: x-large;
   font-weight: bold;
@@ -12,25 +11,24 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-
 .Fonctionnement .chiffre {
   font-size: bold;
   color: white;
   background-color: var(#9356DC);
   text-align: center;
-  border-radius: 20px;
+  border-radius: 40px;
   margin-right: 10px;
 }
-
 .Fonctionnement .btnPaintMenu {
   text-align: center;
-  width: 300px;
-  height: 100px;
-  background-color: var(#F0F0F2);
-  color: black;
+  width: 250px;
+  height: 50px;
+  background-color: #F0F0F2;
   border-radius: 1.5em;
   padding: 10px 12px 10px 12px;
-  font-size: large;
+  font-size: medium;
   text-decoration: none;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 5px;
   cursor: pointer;
 }/*# sourceMappingURL=buttonfonctionnement.css.map */
