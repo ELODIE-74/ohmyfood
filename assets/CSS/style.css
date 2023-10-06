@@ -65,7 +65,9 @@ header .searchcity .logoposition {
   color: white;
   font-size: large;
   text-decoration: none;
-  cursor: pointer;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 30px
+  
 }
 /*section fonctionnement*/
 .Fonctionnement {
@@ -107,4 +109,39 @@ header .searchcity .logoposition {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-top: 5px; 
   cursor: pointer;
-}/*# sourceMappingURL=buttonfonctionnement.css.map */
+}
+/*section cards restaurants*/
+.CardsRestaurantsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.CardsRestaurantsContent .orientationRestaurants {
+  display: flex;
+}
+.CardsRestaurantsContent .orientationRestaurants .cards .caseNew {
+  display: flex;
+  float: left;
+  width: 180px;
+  height: 50px;
+  background-color: #99E2D0;
+}
+.CardsRestaurantsContent .orientationRestaurants .cards .imgrestaurants {
+  width: 100%;
+  height: 115px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+.CardsRestaurantsContent .orientationRestaurants .cards h3 {
+  font-size: large;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.CardsRestaurantsContent .orientationRestaurants .cards .card-Subtitle {
+  margin: 0;
+}
+.CardsRestaurantsContent .orientationRestaurants .cards .icone-Coeurvide {
+  display: flex;
+  float: left;
+}/*# sourceMappingURL=cardsrestaurants.css.map */
