@@ -1,9 +1,11 @@
 .CardsRestaurantsContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  
+
     .orientationRestaurants{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
         .cards{
             width: 100%;
             padding-left: 15px;
@@ -11,13 +13,12 @@
             flex-direction: column;
             justify-content: space-between;
             box-sizing: border-box;
-            text-decoration: none;
-
+            
             .caseNew{
                 display: flex;
-                float: left;
-                width : 80px;
-                height : 30px;
+                justify-content: center;
+                width: 80px;
+                height: 30px;
                 text-align: center;
                 background-color: var(#99E2D0);
                 color:green;
@@ -37,16 +38,13 @@
             .card-Subtitle{
                 margin: 0;
             }
+            a{
+                text-decoration: none;
+            }
             .icone-Coeurvide{
                 display: flex;
-                float : left;
+                float : right;
             }
         }
     }
 }
-
-
-
-
-
-                                             

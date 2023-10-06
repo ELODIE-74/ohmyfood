@@ -1,10 +1,7 @@
-.CardsRestaurantsContent {
+.CardsRestaurantsContent .orientationRestaurants {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.CardsRestaurantsContent .orientationRestaurants {
-  display: flex;
 }
 .CardsRestaurantsContent .orientationRestaurants .cards {
   width: 100%;
@@ -13,11 +10,10 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  text-decoration: none;
 }
 .CardsRestaurantsContent .orientationRestaurants .cards .caseNew {
   display: flex;
-  float: left;
+  justify-content: center;
   width: 80px;
   height: 30px;
   text-align: center;
@@ -39,7 +35,10 @@
 .CardsRestaurantsContent .orientationRestaurants .cards .card-Subtitle {
   margin: 0;
 }
+.CardsRestaurantsContent .orientationRestaurants .cards a {
+  text-decoration: none;
+}
 .CardsRestaurantsContent .orientationRestaurants .cards .icone-Coeurvide {
   display: flex;
-  float: left;
+  float: right;
 }/*# sourceMappingURL=cardsrestaurants.css.map */
