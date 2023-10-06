@@ -5,12 +5,22 @@
     .orientationRestaurants{
         display: flex;
         .cards{
+            width: 100%;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            text-decoration: none;
+
             .caseNew{
                 display: flex;
                 float: left;
-                width : 180px;
-                height : 50px;
+                width : 80px;
+                height : 30px;
+                text-align: center;
                 background-color: var(#99E2D0);
+                color:green;
             }
             .imgrestaurants{
                 width: 100%;
