@@ -1,44 +1,69 @@
-.CardsRestaurantsContent .orientationRestaurants {
+.Restaurants-cardsNew {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.CardsRestaurantsContent .orientationRestaurants .cards {
-  width: 100%;
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  box-sizing: border-box;
 }
-.CardsRestaurantsContent .orientationRestaurants .cards .caseNew {
+
+.Restaurants-title {
   display: flex;
-  justify-content: center;
-  width: 80px;
-  height: 30px;
-  text-align: center;
-  background-color: var(#99E2D0);
-  color: green;
+  justify-content: flex-start;
 }
-.CardsRestaurantsContent .orientationRestaurants .cards .imgrestaurants {
+.Restaurants-title .title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.directionrCards {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  margin-right: 15px;
+  margin-left: 5px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 50px;
+  width: 280px;
+  height: 230px;
+  margin-bottom: 10px;
+}
+.cards a {
+  text-decoration: none;
+}
+.cards img {
   width: 100%;
   height: 115px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
 }
-.CardsRestaurantsContent .orientationRestaurants .cards h3 {
-  font-size: large;
-  margin-top: 10px;
+.cards .casenew {
+  float: right;
+  width: 100px;
+  height: 50px;
+  background-color: #99E2D0;
+  color: green;
+  padding: 5px;
+}
+.cards .card-content {
+  justify-content: space-between;
+  padding-left: 5px;
+}
+.cards .card-content .card-txt {
+  height: 50px;
+}
+.cards .card-content .card-title {
+  height: 10px;
+  margin-top: 5px;
   margin-bottom: 4px;
+  font-size: medium;
 }
-.CardsRestaurantsContent .orientationRestaurants .cards .card-Subtitle {
-  margin: 0;
+.cards .card-content .card-subtitle {
+  font-size: small;
 }
-.CardsRestaurantsContent .orientationRestaurants .cards a {
-  text-decoration: none;
-}
-.CardsRestaurantsContent .orientationRestaurants .cards .icone-Coeurvide {
+.cards .icone-Coeurvide {
   display: flex;
   float: right;
 }/*# sourceMappingURL=cardsrestaurants.css.map */
