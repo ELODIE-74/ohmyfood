@@ -34,4 +34,7 @@
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-top: 5px;
   cursor: pointer;
+}
+.Fonctionnement i {
+  margin-right: 8px;
 }/*# sourceMappingURL=buttonfonctionnement.css.map */
