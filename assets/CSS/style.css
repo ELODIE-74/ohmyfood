@@ -1,4 +1,6 @@
-
+body{
+  background-color: white;
+}
 body .logoposition {
     font-family: "Shrikhand";
   }
@@ -110,63 +112,60 @@ header .searchcity .logoposition {
   margin-top: 5px; 
   cursor: pointer;
 }
-.main-container {
+/*.main-container {
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
   
-}
+}*/
 /*section cards restaurants*/
 .Restaurants-cardsNew {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 80px;
 }
 
 .Restaurants-title {
-  display: flex;
   justify-content: flex-start;
+
 }
 .Restaurants-title .title {
   font-size: large;
   font-weight: bold;
+ 
 }
 
 .directionrCards {
   display: flex;
   flex-direction: column;
+  margin-left: -88px;
+
 }
 
 .cards {
+  display:block;
   margin-right: 15px;
-  margin-left: 5px;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-top: 50px;
   width: 280px;
-  height: 230px;
-  margin-bottom: 10px;
-
+  height: 250px;
+  margin-bottom: -35px;
+ 
 }
 .cards a {
   text-decoration: none;
 }
 .cards img {
   width: 100%;
-  height: 115px;
+  height: 190px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
-}
-.cards .casenew {
-  float: right;
-  width: 100px;
-  height: 50px;
-  background-color: #99E2D0;
-  color: green;
-  padding: 5px;
 }
 .cards .card-content {
   justify-content: space-between;
@@ -174,17 +173,51 @@ header .searchcity .logoposition {
 }
 .cards .card-content .card-txt {
   height: 50px;
+  color: black;
 }
 .cards .card-content .card-title {
   height: 10px;
   margin-top: 5px;
   margin-bottom: 4px;
-  font-size: medium;
+  font-size: large;
+  font-weight: bold;
+  
 }
 .cards .card-content .card-subtitle {
-  font-size: small;
+  font-size: medium;
 }
 .cards .icone-Coeurvide {
   display: flex;
   float: right;
-}/*# sourceMappingURL=cardsrestaurants.css.map */
+  width : 40px;
+  height: 40px;
+  margin-top : -40px;
+  color : black;
+}
+/*footer*/
+footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 4px;
+  margin-top: 25px;
+  background-color: grey;
+  color: white;
+}
+footer img {
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+footer ul {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+footer li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+
+
+

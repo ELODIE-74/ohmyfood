@@ -1,0 +1,25 @@
+footer{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4px;
+    margin-top: 25px;
+    background-color: grey;
+    color: white;
+
+    img{
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    ul{
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    li{
+        list-style: none;
+        padding-bottom: 10px; 
+    }
+    
+}
+                           

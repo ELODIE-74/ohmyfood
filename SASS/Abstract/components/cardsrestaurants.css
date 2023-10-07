@@ -1,6 +1,8 @@
 .Restaurants-cardsNew {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 80px;
 }
 
 .Restaurants-title {
@@ -15,37 +17,29 @@
 .directionrCards {
   display: flex;
   flex-direction: column;
+  margin-left: -88px;
 }
 
 .cards {
   margin-right: 15px;
-  margin-left: 5px;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-top: 50px;
   width: 280px;
-  height: 230px;
-  margin-bottom: 10px;
+  height: 250px;
+  margin-bottom: -35px;
 }
 .cards a {
   text-decoration: none;
 }
 .cards img {
   width: 100%;
-  height: 115px;
+  height: 190px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
-}
-.cards .casenew {
-  float: right;
-  width: 100px;
-  height: 50px;
-  background-color: #99E2D0;
-  color: green;
-  padding: 5px;
 }
 .cards .card-content {
   justify-content: space-between;
@@ -53,17 +47,23 @@
 }
 .cards .card-content .card-txt {
   height: 50px;
+  color: black;
 }
 .cards .card-content .card-title {
   height: 10px;
   margin-top: 5px;
   margin-bottom: 4px;
-  font-size: medium;
+  font-size: large;
+  font-weight: bold;
 }
 .cards .card-content .card-subtitle {
-  font-size: small;
+  font-size: medium;
 }
 .cards .icone-Coeurvide {
   display: flex;
   float: right;
+  width: 40px;
+  height: 40px;
+  margin-top: -40px;
+  color: black;
 }/*# sourceMappingURL=cardsrestaurants.css.map */
