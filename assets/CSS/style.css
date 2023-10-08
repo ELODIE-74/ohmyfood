@@ -1,5 +1,7 @@
 body{
   background-color: white;
+  
+  /*margin: 0;*/
 }
 body .logoposition {
     font-family: "Shrikhand";
@@ -50,13 +52,12 @@ header .searchcity .logoposition {
 .reservation {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 350px;
+  height: 260px;
   background-color: #F0F0F2;
-  
 }
 .reservation .exploration .btn-Explorer {
   width: 350px;
@@ -68,17 +69,15 @@ header .searchcity .logoposition {
   font-size: large;
   text-decoration: none;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  margin-top: 30px
   
 }
 /*section fonctionnement*/
 .Fonctionnement {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
-
 .Fonctionnement .Title {
   font-size: x-large;
   font-weight: bold;
@@ -86,35 +85,40 @@ header .searchcity .logoposition {
   flex-direction: row;
   justify-content: flex-start;
 }
-
 .Fonctionnement .chiffre {
   font-size: bold;
   color: white;
-  background-color:#9356DC;
+  background-color: #9356DC;
   text-align: center;
   border-radius: 100px;
-  margin-right: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
   width: 20px;
   height: 20px;
   padding: 5px;
+  margin-top: 20px;
 }
-
 .Fonctionnement .btnPaintMenu {
   text-align: center;
-  width: 250px;
+  width: 280px;
   height: 50px;
-  background-color:#F0F0F2;
+  background-color: #F0F0F2;
+  color : black;
   border-radius: 1.5em;
+  border : none;
   padding: 10px 12px 10px 12px;
   font-size: medium;
   text-decoration: none;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  margin-top: 5px; 
+  margin-top: 5px;
   cursor: pointer;
+  
 }
 .Fonctionnement i {
-  margin-right: 8px;
+  margin-right: 15px;
+  color: grey;
 }
+
 /*.main-container {
   width: 100%;
   max-width: 1440px;
