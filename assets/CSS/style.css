@@ -212,7 +212,7 @@ footer {
   margin-top: 50px;
   padding-right: 250px;
   background-color: #353434;
-  color:white;
+  color: white;
 }
 footer .imglogobas {
   width: 100px;
@@ -220,7 +220,7 @@ footer .imglogobas {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 15px;
-  color: white;
+  
 }
 footer .footer-content {
   flex-direction: column;
