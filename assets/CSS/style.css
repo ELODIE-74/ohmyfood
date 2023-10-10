@@ -87,6 +87,7 @@ header,.reservation {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
+  gap:15px;
 }
 .Fonctionnement .Title {
   font-size: x-large;
@@ -97,6 +98,7 @@ header,.reservation {
 }
 .Fonctionnement .alignement .chiffre {
   position: absolute;
+  z-index:1;
   font-size: bold;
   color: white;
   background-color: #9356DC;

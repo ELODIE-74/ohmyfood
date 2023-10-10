@@ -3,19 +3,21 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
-  align-items: center; 
-  margin-left: 10px;                 
+  align-items: center;
+  margin-left: 10px;  
+  gap:15px;              
 
     .Title {
-    font-size: x-large;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
+      font-size: x-large;
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
   .alignement{
     .chiffre {
-      position : absolute;
+      position: absolute;
+      z-index:1;
       font-size: bold;
       color: white;
       background-color: #9356DC;
@@ -28,32 +30,30 @@
       padding: 5px;
       margin-top: 20px;
       
-  }
+    }
   .btnPaintMenu {
-    position : relative;
+    position: relative;
     text-align: center;
     width: 260px;
     height: 50px;
     background-color: #F0F0F2;
-    color : black;
+    color: black;
     border-radius: 1.5em;
-    border : none;
+    border: none;
     padding: 10px 12px 10px 12px;
     font-size: medium;
     text-decoration: none;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-top: 5px;
-    margin-left : 15px;
+    margin-left: 15px;
     cursor: pointer;
-  }
+    }
   i {
     margin-right: 15px;
     color: grey;
   }
     
  }
-
-  
 }
 
 
@@ -73,57 +73,5 @@
 
 
 
-/*.Fonctionnement {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center; 
-  margin-left: 10px;                 
 
-    .Title {
-    font-size: x-large;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-  .alignement{
-    position : relative;
-    .chiffre {
-      font-size: bold;
-      color: white;
-      background-color: #9356DC;
-      text-align: center;
-      border-radius: 100px;
-      margin-top: 10px;
-      margin-right: 5px;
-      width: 20px;
-      height: 20px;
-      padding: 5px;
-      margin-top: 20px;
-  }
-  .btnPaintMenu {
-    text-align: center;
-    width: 280px;
-    height: 50px;
-    background-color: #F0F0F2;
-    color : black;
-    border-radius: 1.5em;
-    border : none;
-    padding: 10px 12px 10px 12px;
-    font-size: medium;
-    text-decoration: none;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    margin-top: 5px;
-    cursor: pointer;
-  }
-  i {
-    margin-right: 15px;
-    color: grey;
-  }
-    
- }
 
-  
-}*/
