@@ -2,41 +2,40 @@ $color-primary : #9356DC;
 $color-secondary : #FF79DA;
 $color-tertiaire : #99E2D0;
 $color-placeholder-header: #D3D3D3;
+$color-back-body :#E5E7E9;
 
 header{
-    background-color: var($color-header);
-    display: flex;
+        background-color: var($color-back-body);
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         width:100%;
-        padding-bottom: 20px;
-    .imglogohaut{
+        background-color: #F0F0F2;
+        .imglogohaut{
         width : 100px;
         height: 30px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .searchcity{
-        background-color: var($color-placeholder-header);
-        border-top: 4px solid black;
-        width : 100%;
-        height:40px;
-        position: relative;
-        border: 1px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        font-weight: 100;
-        font-family: 'Roboto';
-        font-style: normal;
-        color: black;
-        margin: 0;
-        padding: 0.75rem;
-        font-size: medium;
-        .logoposition{
-            margin-right: 10px;
-            padding-top: 10px;
+            .searchcity{
+            background-color: #E5E7E9;
+            box-shadow: inset 0em 0.5em 0.5em #85929E;
+            width: 100%;
+            height: 40px;
+            position: relative;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 100;
+            font-style: normal;
+            color: black;
+            margin: 0;
+            padding: 0.75rem;
+            font-size: medium;
+                .logoposition{
+                 margin-right: 10px;
+                 padding-top: 10px;
         }
     }
     
