@@ -67,7 +67,7 @@ header,.reservation {
 .reservation .exploration .btn-Explorer {
   width: 180px;
   height: 25px;
-  background: linear-gradient(pink, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 1.5em;
   padding: 10px 12px 10px 12px;
   color: white;
@@ -99,7 +99,7 @@ header,.reservation {
 .Fonctionnement .alignement .chiffre {
   position: absolute;
   z-index:1;
-  font-size: bold;
+  font-size: large;
   color: white;
   background-color: #9356DC;
   text-align: center;
@@ -143,24 +143,24 @@ header,.reservation {
 /*section cards restaurants*/
 .Restaurants-cardsNew {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 25px;
   margin-bottom: 80px;
+  margin-left: 15px;
 }
 
-.Restaurants-title {
+.title {
   display: flex;
   justify-content: flex-start;
-}
-.Restaurants-title .title {
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
 }
 
 .directionrCards {
   display: flex;
   flex-direction: column;
-  margin-left: -88px;
+  margin-left: -130px;
+  margin-top: 10px;
 }
 
 .cards {
@@ -176,6 +176,8 @@ header,.reservation {
 }
 .cards a {
   text-decoration: none;
+  cursor: pointer;
+  color:black;
 }
 .cards img {
   width: 100%;
@@ -209,7 +211,10 @@ header,.reservation {
   height: 40px;
   margin-top: -40px;
   color: black;
-}/*# sourceMappingURL=cardsrestaurants.css.map */
+}
+.cards .icone-Coeurvide:hover {
+  background: linear-gradient (#9356DC, #FF79DA);
+}
 /*footer*/
 footer {
   display: flex;

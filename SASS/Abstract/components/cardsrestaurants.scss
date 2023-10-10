@@ -1,21 +1,25 @@
+
 .Restaurants-cardsNew{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 25px;
     margin-bottom: 80px;
+    margin-left:15px;
 }
-.Restaurants-title{
-    display: flex;
+.title{
+     display: flex;
     justify-content: flex-start;
-    .title{
-        font-size: large;
+        font-size: x-large;
         font-weight: bold;
+  
+   
     }
-}
+
 .directionrCards{
     display: flex;
     flex-direction: column;
-    margin-left: -88px;
+    margin-left: -130px;
+    margin-top : 10px;
 }
 .cards{  
     margin-right: 15px;
@@ -30,6 +34,8 @@
     
     a{
         text-decoration: none;
+        cursor: pointer;
+        color:black;
     }
     img{
         width: 100%;
@@ -63,5 +69,9 @@
         height: 40px;
         margin-top : -40px;
         color : black;
+        &:hover{
+            background: linear-gradient (#9356DC,#FF79DA);
+          }
     }
+    
 }

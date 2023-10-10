@@ -17,7 +17,7 @@
 .Fonctionnement .alignement .chiffre {
   position: absolute;
   z-index: 1;
-  font-size: bold;
+  font-size: large;
   color: white;
   background-color: #9356DC;
   text-align: center;

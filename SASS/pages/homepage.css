@@ -17,7 +17,7 @@ header.reservation {
 .reservation .exploration .btn-Explorer {
   width: 180px;
   height: 25px;
-  background: linear-gradient(pink, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 1.5em;
   padding: 10px 12px 10px 12px;
   color: white;
