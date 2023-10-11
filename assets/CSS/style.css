@@ -1,7 +1,7 @@
 body{
   background-color: white;
   
-  /*margin: 0;*/
+  margin: 0;
 }
 body .logoposition {
     font-family: "Shrikhand";
@@ -155,7 +155,7 @@ header,.reservation {
   display: grid;
   grid-template-columns: 1fr ;
   grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
+  justify-items: flex-start;
   align-items: center;
   margin-left: 10px;
   gap:15px;
