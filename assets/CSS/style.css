@@ -296,9 +296,21 @@ header,.reservation {
   margin-top: -40px;
   color: black;
 }
-.cards .icone-Coeurvide:hover {
-  background: linear-gradient (#9356DC, #FF79DA);
+.cards .icone-Coeurvide fa-heart {
+  color: #FFF;
+  background-color: #000;
+  border-radius: 50%;
+  padding:.2em;
 }
+.cards .icone-Coeurvide .fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color -.2s ease-out;
+}
+.cards .icone-Coeurvide .fa-heart:hover::before {
+  color: #9356DC;
+  cursor: pointer;
+}/*# sourceMappingURL=cardsrestaurants.css.map */
 /*footer*/
 footer {
   display: flex;
