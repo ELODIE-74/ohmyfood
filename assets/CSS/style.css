@@ -244,6 +244,19 @@ header,.reservation {
   width: 280px;
   height: 250px;
   margin-bottom: -35px;
+  position: relative;
+}
+.cards .boutonnouveau {
+  margin-top : 15px;
+  margin-left : 190px;
+  padding-top : 1.5px;
+  float: right;
+  position : absolute;
+  width: 80px;
+  height: 25px;
+  background-color: #99E2D0;
+  color: green;
+  text-align: center;
 }
 .cards a {
   text-decoration: none;
