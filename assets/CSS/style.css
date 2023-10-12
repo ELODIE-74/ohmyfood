@@ -1,132 +1,132 @@
-body{
+body {
   background-color: white;
-  
+
   margin: 0;
 }
 body .logoposition {
-    font-family: "Shrikhand";
+  font-family: "Shrikhand";
+}
+body p {
+  font-family: "Roboto";
+}
+body h1 {
+  font-weight: bold;
+}
+/*loader chargement*/
+.section-loader {
+  background: linear-gradient(#ff79da, #99e2d0, #9356dc);
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader-bars:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  background-color: #9356dc;
+  animation: grow 1.5s linear infinite;
+}
+
+.loader-bars:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  background-color: #ff79da;
+  animation: grow 1.5s linear -0.5s infinite;
+}
+
+.loader-bars span {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  background-color: #99e2d0;
+  animation: grow 1.5s linear -1s infinite;
+}
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
   }
-  body p {
-    font-family: "Roboto";
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
   }
-  body h1 {
-    font-weight: bold;
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
   }
-  /*loader chargement*/
-  .section-loader {
-    background: linear-gradient(#FF79DA,#99E2D0 ,#9356DC);
-    height: 80px;
-    line-height: 80px;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    font-size: 20px;
-    color: black;
-    text-align: center;
-    opacity: 0.8;
-  }
-  
-  .loader {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-  }
-  
-  .loader-bars:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 10px;
-    height: 30px;
-    background-color: #9356DC;
-    animation: grow 1.5s linear infinite;
-  }
-  
-  .loader-bars:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 15px;
-    top: 0;
-    width: 10px;
-    height: 30px;
-    background-color: #FF79DA;
-    animation: grow 1.5s linear -0.5s infinite;
-  }
-  
-  .loader-bars span {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 30px;
-    top: 0;
-    width: 10px;
-    height: 30px;
-    background-color: #99E2D0;
-    animation: grow 1.5s linear -1s infinite;
-  }
-  @keyframes grow {
-    0% {
-      transform: scaleY(0);
-      opacity: 0;
-    }
-    50% {
-      transform: scaleY(1);
-      opacity: 1;
-    }
-    100% {
-      transform: scaleY(0);
-      opacity: 0;
-    }
-  }
+}
 /*header homepage*/
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #F0F0F2;
-    
-  }
-  header .imglogohaut {
-    width: 100px;
-    height: 30px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  header .searchcity {
-    background-color: #E5E7E9;
-    box-shadow: inset 0em 0.5em 0.5em #85929E;
-    width: 100%;
-    height: 40px;
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    font-weight: 100;
-    font-style: normal;
-    color: black;
-    margin: 0;
-    padding: 0.75rem;
-    font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #f0f0f2;
+}
+header .imglogohaut {
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+header .searchcity {
+  background-color: #e5e7e9;
+  box-shadow: inset 0em 0.5em 0.5em #85929e;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-style: normal;
+  color: black;
+  margin: 0;
+  padding: 0.75rem;
+  font-size: medium;
 }
 header .searchcity .logoposition {
   margin-right: 10px;
   padding-top: 10px;
 }
-header,.reservation {
+header,
+.reservation {
   margin-top: 0;
 }
 /*section réservation*/
 .reservation {
   width: 100%;
   height: 260px;
-  background-color: #F0F0F2;
+  background-color: #f0f0f2;
   text-align: center;
 }
 .reservation .exploration {
@@ -138,27 +138,27 @@ header,.reservation {
 .reservation .exploration .btn-Explorer {
   width: 180px;
   height: 25px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 1.5em;
   padding: 10px 12px 10px 12px;
   color: white;
   font-size: large;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 5px 3px 5px #CACFD2;
+  box-shadow: 5px 3px 5px #cacfd2;
   text-align: center;
   padding-top: 8px;
   margin-bottom: 10px;
-}/*# sourceMappingURL=homepage.css.map */
+} /*# sourceMappingURL=homepage.css.map */
 /*section fonctionnement*/
 .Fonctionnement {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  justify-items: flex-start;
+  justify-items: center;
   align-items: center;
   margin-left: 10px;
-  gap:15px;
+  gap: 15px;
 }
 .Fonctionnement .Title {
   font-size: x-large;
@@ -166,13 +166,14 @@ header,.reservation {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-right: 100px;
 }
 .Fonctionnement .alignement .chiffre {
   position: absolute;
-  z-index:1;
+  z-index: 1;
   font-size: large;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
   text-align: center;
   border-radius: 100px;
   margin-top: 10px;
@@ -187,7 +188,7 @@ header,.reservation {
   text-align: center;
   width: 260px;
   height: 50px;
-  background-color: #F0F0F2;
+  background-color: #f0f0f2;
   color: black;
   border-radius: 1.5em;
   border: none;
@@ -247,21 +248,21 @@ header,.reservation {
   position: relative;
 }
 .cards .boutonnouveau {
-  margin-top : 15px;
-  margin-left : 190px;
-  padding-top : 1.5px;
+  margin-top: 15px;
+  margin-left: 190px;
+  padding-top: 1.5px;
   float: right;
-  position : absolute;
+  position: absolute;
   width: 80px;
   height: 25px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: green;
   text-align: center;
 }
 .cards a {
   text-decoration: none;
   cursor: pointer;
-  color:black;
+  color: black;
 }
 .cards img {
   width: 100%;
@@ -297,20 +298,20 @@ header,.reservation {
   color: black;
 }
 .cards .icone-Coeurvide fa-heart {
-  color: #FFF;
+  color: #fff;
   background-color: #000;
   border-radius: 50%;
-  padding:.2em;
+  padding: 0.2em;
 }
 .cards .icone-Coeurvide .fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color -.2s ease-out;
+  content: "\f004";
+  font-weight: bold;
+  transition: color -0.2s ease-out;
 }
 .cards .icone-Coeurvide .fa-heart:hover::before {
-  color: #9356DC;
+  color: #9356dc;
   cursor: pointer;
-}/*# sourceMappingURL=cardsrestaurants.css.map */
+} /*# sourceMappingURL=cardsrestaurants.css.map */
 /*footer*/
 footer {
   display: flex;
@@ -330,7 +331,6 @@ footer .imglogobas {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 15px;
-  
 }
 footer .footer-content {
   flex-direction: column;
@@ -351,7 +351,4 @@ footer li {
 }
 footer i {
   margin-right: 8px;
-}/*# sourceMappingURL=footer.css.map */
-
-
-
+} /*# sourceMappingURL=footer.css.map */
