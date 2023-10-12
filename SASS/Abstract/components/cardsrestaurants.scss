@@ -1,100 +1,96 @@
-
-.Restaurants-cardsNew{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 80px;
-    margin-left:15px;
+.Restaurants-cardsNew {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 80px;
+  margin-left: 15px;
 }
-.title{
-     display: flex;
-    justify-content: flex-start;
-        font-size: x-large;
-        font-weight: bold;
-  
-   
-    }
-
-.directionrCards{
-    display: flex;
-    flex-direction: column;
-    margin-left: -130px;
-    margin-top : 10px;
+.title {
+  display: flex;
+  justify-content: flex-start;
+  font-size: x-large;
+  font-weight: bold;
 }
-.cards{  
-    margin-right: 15px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    margin-top: 50px;
-    width: 280px;
-    height: 250px;
-    margin-bottom: -35px;
-    .boutonnouveau{
-        margin-top : 15px;
-        margin-left : 190px;
-        padding-top : 1.5px;
-        float: right;
-        position : absolute;
-        width: 80px;
-        height: 25px;
-        background-color: #99E2D0;
-        color: green;
-        text-align: center;
-      }
-    a{
-        text-decoration: none;
-        cursor: pointer;
-        color:black;
+
+.directionrCards {
+  display: flex;
+  flex-direction: column;
+  margin-left: -130px;
+  margin-top: 10px;
+}
+.cards {
+  margin-right: 15px;
+  background-color: var($color-body-origine);
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 50px;
+  width: 280px;
+  height: 250px;
+  margin-bottom: -35px;
+  .boutonnouveau {
+    margin-top: 15px;
+    margin-left: 190px;
+    padding-top: 1.5px;
+    float: right;
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    background-color: var($color-secondary);
+    color: var($color-texte-boutonnouveau);
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var($color-police-text);
+  }
+  img {
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+  .card-content {
+    justify-content: space-between;
+    padding-left: 5px;
+    .card-txt {
+      height: 50px;
+      color: var($color-police-text);
     }
-    img{
-        width: 100%;
-        height: 190px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        object-fit: cover;
+    .card-title {
+      height: 10px;
+      margin-top: 5px;
+      margin-bottom: 4px;
+      font-size: large;
+      font-weight: bold;
     }
-    .card-content{
-        justify-content: space-between;
-        padding-left: 5px;
-        .card-txt {
-            height: 50px; 
-            color: black;
-        }
-        .card-title{
-            height : 10px;
-            margin-top: 5px;
-            margin-bottom: 4px;
-            font-size: large;
-            font-weight: bold;
-        }
-        .card-subtitle{
-            font-size: medium;
-        }
+    .card-subtitle {
+      font-size: medium;
     }
-    .icone-Coeurvide{
-        display: flex;
-        float : right;
-        width : 40px;
-        height: 40px;
-        margin-top : -40px;
-        color : black;
-        fa-heart {
-            color: #FFF;
-            background-color: #000;
-            border-radius: 50%;
-            padding:.2em;
-        }
-        .fa-heart::before {
-            content: "\f004";
-            font-weight: bold;
-            transition: color -.2s ease-out;
-        }
-        .fa-heart:hover::before{
-            color: #9356DC;
-            cursor: pointer;
-        }
+  }
+  .icone-Coeurvide {
+    display: flex;
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-top: -40px;
+    color: var($color-police-text);
+    fa-heart {
+      color: var($color-body-origine);
+      background-color: var($color-police-text);
+      border-radius: 50%;
+      padding: 0.2em;
     }
-    
+    .fa-heart::before {
+      content: "\f004";
+      font-weight: bold;
+      transition: color -0.2s ease-out;
+    }
+    .fa-heart:hover::before {
+      color: var($color-primary);
+      cursor: pointer;
+    }
+  }
 }

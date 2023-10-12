@@ -1,6 +1,25 @@
-body {
-  background-color: white;
+* {
+  font-family: "Roboto", "Shrikhand";
+}
+:root {
+  --color-primary: #9356dc;
+  --color-secondary: #ff79da;
+  --color-tertiaire: #99e2d0;
+  --color-placeholder-header: #d3d3d3;
+  --color-back-body: #e5e7e9;
+  --color-police-text: #000;
+  --color-body-origine: #fff;
+  --color-header: #f0f0f2;
+  --color-shadow: #85929e;
+  --color-shadow-reservation: #cacfd2;
+  --color-footer: #353434;
+  --color-icones: grey;
+  --color-texte-boutonnouveau: green;
+  --color-footer: #353434;
+}
 
+body {
+  background-color: var(--color-body-origine);
   margin: 0;
 }
 body .logoposition {
@@ -21,7 +40,7 @@ body h1 {
   padding: 0;
   font-family: sans-serif;
   font-size: 20px;
-  color: black;
+  color: var(--color-police-text);
   text-align: center;
   opacity: 0.8;
 }
@@ -42,7 +61,7 @@ body h1 {
   top: 0;
   width: 10px;
   height: 30px;
-  background-color: #9356dc;
+  background-color: var(--color-primary);
   animation: grow 1.5s linear infinite;
 }
 
@@ -54,7 +73,7 @@ body h1 {
   top: 0;
   width: 10px;
   height: 30px;
-  background-color: #ff79da;
+  background-color: var(--color-secondary);
   animation: grow 1.5s linear -0.5s infinite;
 }
 
@@ -66,7 +85,7 @@ body h1 {
   top: 0;
   width: 10px;
   height: 30px;
-  background-color: #99e2d0;
+  background-color: var(--color-tertiaire);
   animation: grow 1.5s linear -1s infinite;
 }
 @keyframes grow {
@@ -90,7 +109,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #f0f0f2;
+  background-color: var(--color-header);
 }
 header .imglogohaut {
   width: 100px;
@@ -99,8 +118,8 @@ header .imglogohaut {
   margin-bottom: 5px;
 }
 header .searchcity {
-  background-color: #e5e7e9;
-  box-shadow: inset 0em 0.5em 0.5em #85929e;
+  background-color: var(--color-back-body);
+  box-shadow: inset 0em 0.5em 0.5em var(--color-shadow);
   width: 100%;
   height: 40px;
   position: relative;
@@ -109,7 +128,7 @@ header .searchcity {
   justify-content: center;
   font-weight: 100;
   font-style: normal;
-  color: black;
+  color: var(--color-police-text);
   margin: 0;
   padding: 0.75rem;
   font-size: medium;
@@ -126,7 +145,7 @@ header,
 .reservation {
   width: 100%;
   height: 260px;
-  background-color: #f0f0f2;
+  background-color: var(--color-header);
   text-align: center;
 }
 .reservation .exploration {
@@ -135,17 +154,20 @@ header,
   align-items: center;
   gap: 10px;
 }
+.reservation .exploration .titleexploration {
+  font-size: medium;
+}
 .reservation .exploration .btn-Explorer {
-  width: 180px;
+  width: 230px;
   height: 25px;
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 1.5em;
   padding: 10px 12px 10px 12px;
-  color: white;
+  color: var(--color-body-origine);
   font-size: large;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 5px 3px 5px #cacfd2;
+  box-shadow: 5px 3px 5px var(--color-shadow-reservation);
   text-align: center;
   padding-top: 8px;
   margin-bottom: 10px;
@@ -172,28 +194,28 @@ header,
   position: absolute;
   z-index: 1;
   font-size: large;
-  color: white;
-  background-color: #9356dc;
+  color: var(--color-body-origine);
+  background-color: var(--color-primary);
   text-align: center;
   border-radius: 100px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-right: 5px;
   width: 20px;
   height: 20px;
-  padding: 5px;
-  margin-top: 20px;
+  padding: 1px;
 }
 .Fonctionnement .alignement .btnPaintMenu {
   position: relative;
   text-align: center;
   width: 260px;
   height: 50px;
-  background-color: #f0f0f2;
-  color: black;
+  background-color: var(--color-header);
+  color: var(--color-police-text);
   border-radius: 1.5em;
   border: none;
   padding: 10px 12px 10px 12px;
   font-size: medium;
+  font-weight: bold;
   text-decoration: none;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-top: 5px;
@@ -202,7 +224,7 @@ header,
 }
 .Fonctionnement .alignement i {
   margin-right: 15px;
-  color: grey;
+  color: var(--color-icones);
 }
 
 /*.main-container {
@@ -211,7 +233,7 @@ header,
   padding: 0 50px;
   box-sizing: border-box;
   
-}*/
+}
 /*section cards restaurants*/
 .Restaurants-cardsNew {
   display: flex;
@@ -237,7 +259,7 @@ header,
 
 .cards {
   margin-right: 15px;
-  background-color: white;
+  background-color: var(--color-body-origine);
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -255,14 +277,14 @@ header,
   position: absolute;
   width: 80px;
   height: 25px;
-  background-color: #99e2d0;
-  color: green;
+  background-color: var(--color-tertiaire);
+  color: var(--color-texte-boutonnouveau);
   text-align: center;
 }
 .cards a {
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: var(--color-police-text);
 }
 .cards img {
   width: 100%;
@@ -277,7 +299,7 @@ header,
 }
 .cards .card-content .card-txt {
   height: 50px;
-  color: black;
+  color: var(--color-police-text);
 }
 .cards .card-content .card-title {
   height: 10px;
@@ -295,11 +317,11 @@ header,
   width: 40px;
   height: 40px;
   margin-top: -40px;
-  color: black;
+  color: var(--color-police-text);
 }
 .cards .icone-Coeurvide fa-heart {
-  color: #fff;
-  background-color: #000;
+  color: var(--color-body-origine);
+  background-color: var(--color-police-text);
   border-radius: 50%;
   padding: 0.2em;
 }
@@ -309,7 +331,7 @@ header,
   transition: color -0.2s ease-out;
 }
 .cards .icone-Coeurvide .fa-heart:hover::before {
-  color: #9356dc;
+  color: var(--color-primary);
   cursor: pointer;
 } /*# sourceMappingURL=cardsrestaurants.css.map */
 /*footer*/
@@ -317,23 +339,23 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
+  align-items: center;
   padding-bottom: 20px;
   margin-top: 50px;
-  padding-right: 250px;
-  background-color: #353434;
-  color: white;
+  padding-right: 30px;
+  background-color: var(--color-footer);
+  color: var(--color-body-origine);
 }
 footer .imglogobas {
   width: 100px;
   height: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 15px;
+  margin-right: 150px;
 }
 footer .footer-content {
   flex-direction: column;
+  margin-right: 100px;
 }
 footer .footer-content a:hover {
   text-decoration: none;
@@ -344,6 +366,7 @@ footer .list {
 footer ul {
   justify-content: flex-start;
   padding-left: 20px;
+  width: 100%;
 }
 footer li {
   list-style: none;

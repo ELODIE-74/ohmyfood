@@ -2,23 +2,23 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
+  align-items: center;
   padding-bottom: 20px;
   margin-top: 50px;
-  padding-right: 250px;
-  background-color: #353434;
-  color: white;
+  padding-right: 30px;
+  background-color: var(--color-footer);
+  color: var(--color-body-origine);
 }
 footer .imglogobas {
   width: 100px;
   height: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 15px;
+  margin-right: 150px;
 }
 footer .footer-content {
   flex-direction: column;
+  margin-right: 100px;
 }
 footer .footer-content a:hover {
   text-decoration: none;
@@ -29,6 +29,7 @@ footer .list {
 footer ul {
   justify-content: flex-start;
   padding-left: 20px;
+  width: 100%;
 }
 footer li {
   list-style: none;

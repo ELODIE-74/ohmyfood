@@ -20,28 +20,28 @@
       position: absolute;
       z-index: 1;
       font-size: large;
-      color: white;
-      background-color: #9356dc;
+      color: var($color-body-origine);
+      background-color: var($color-primary);
       text-align: center;
       border-radius: 100px;
-      margin-top: 10px;
+      margin-top: 15px;
       margin-right: 5px;
       width: 20px;
       height: 20px;
-      padding: 5px;
-      margin-top: 20px;
+      padding: 1px;
     }
     .btnPaintMenu {
       position: relative;
       text-align: center;
       width: 260px;
       height: 50px;
-      background-color: #f0f0f2;
-      color: black;
+      background-color: var($color-header);
+      color: var($color-police-text);
       border-radius: 1.5em;
       border: none;
       padding: 10px 12px 10px 12px;
       font-size: medium;
+      font-weight: bold;
       text-decoration: none;
       filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
       margin-top: 5px;
@@ -50,7 +50,7 @@
     }
     i {
       margin-right: 15px;
-      color: grey;
+      color: var($color-icones);
     }
   }
 }

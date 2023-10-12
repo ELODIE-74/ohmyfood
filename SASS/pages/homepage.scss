@@ -1,38 +1,34 @@
-$color-primary : #9356DC;
-$color-secondary : #FF79DA;
-$color-tertiaire : #99E2D0;
-$color-placeholder-header: #D3D3D3;
-$color-back-body :#E5E7E9;
-header.reservation{
-    margin-top : 0;
+header.reservation {
+  margin-top: 0;
 }
-.reservation{
-    width: 100%;
-    height: 260px;
-    background-color: #F0F0F2;
-    text-align: center;
+.reservation {
+  width: 100%;
+  height: 260px;
+  background-color: var($color-header);
+  text-align: center;
 
-    .exploration{
-         display:flex;
-         flex-direction:column;
-         align-items:center;
-         gap : 10px;
-      
-        .btn-Explorer {
-            width: 180px;
-            height: 25px;
-            background: linear-gradient(#FF79DA,#9356DC);
-            border-radius: 1.5em ;
-            padding : 10px 12px 10px 12px;
-            color: white;
-            font-size: large;
-            text-decoration: none;  
-            cursor:pointer;
-            box-shadow: 5px 3px 5px #CACFD2 ;
-            text-align:center;
-          padding-top: 8px;
-          margin-bottom :10px;
-        }
+  .exploration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    .titleexploration {
+      font-size: medium;
     }
-   
+    .btn-Explorer {
+      width: 230px;
+      height: 25px;
+      background: linear-gradient(var($color-secondary), var($color-primary));
+      border-radius: 1.5em;
+      padding: 10px 12px 10px 12px;
+      color: var($color-body-origine);
+      font-size: large;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 5px 3px 5px var($color-shadow-reservation);
+      text-align: center;
+      padding-top: 8px;
+      margin-bottom: 10px;
+    }
+  }
 }
