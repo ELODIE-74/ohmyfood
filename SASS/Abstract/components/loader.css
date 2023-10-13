@@ -1,14 +1,21 @@
 .section-loader {
-  background: linear-gradient(#FF79DA, #99E2D0, #9356DC);
-  height: 80px;
-  line-height: 80px;
+  background: linear-gradient(#ff79da, #99e2d0, #9356dc);
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   font-size: 20px;
-  color: black;
+  color: var(--color-police-text);
   text-align: center;
   opacity: 0.8;
+  position: absolute;
+  animation-duration: 5s;
+  animation-name: grow;
+  animation-iteration-count: alternate;
+  opacity: 0%;
+  backdrop-filter: invert(50%);
 }
 
 .loader {
@@ -27,7 +34,7 @@
   top: 0;
   width: 10px;
   height: 30px;
-  background-color: #9356DC;
+  background-color: var(#9356dc);
   animation: grow 1.5s linear infinite;
 }
 
@@ -39,7 +46,7 @@
   top: 0;
   width: 10px;
   height: 30px;
-  background-color: #FF79DA;
+  background-color: var(#ff79da);
   animation: grow 1.5s linear -0.5s infinite;
 }
 
@@ -51,7 +58,7 @@
   top: 0;
   width: 10px;
   height: 30px;
-  background-color: #99E2D0;
+  background-color: var(#99e2d0);
   animation: grow 1.5s linear -1s infinite;
 }
 

@@ -1,6 +1,7 @@
 * {
   font-family: "Roboto", "Shrikhand";
 }
+
 :root {
   --color-primary: #9356dc;
   --color-secondary: #ff79da;
@@ -34,8 +35,9 @@ body h1 {
 /*loader chargement*/
 .section-loader {
   background: linear-gradient(#ff79da, #99e2d0, #9356dc);
-  height: 80px;
-  line-height: 80px;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -43,6 +45,12 @@ body h1 {
   color: var(--color-police-text);
   text-align: center;
   opacity: 0.8;
+  position: absolute;
+  animation-duration: 5s;
+  animation-name: grow;
+  animation-iteration-count: alternate;
+  opacity: 0%;
+  backdrop-filter: invert(50%);
 }
 
 .loader {
@@ -102,6 +110,18 @@ body h1 {
     opacity: 0;
   }
 }
+
+/*@keyframes homepage {
+  0% {
+    transform: (opacity(0.4));
+  }
+  50% {
+    transform: (opacity(1));
+  }
+  100% {
+    transform: (opacity(1.5));
+  }
+}*/
 /*header homepage*/
 header {
   display: flex;
