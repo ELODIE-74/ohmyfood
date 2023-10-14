@@ -35,14 +35,14 @@ $color-footer: #353434;
   flex-direction: column;
   margin-left: -130px;
   margin-top: 10px;
-  @media (max-width: 1440px) {
+  /*@media (max-width: 1440px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
     justify-content: flex-start;
-  }
+  }*/
 }
 .cards {
   margin-right: 15px;
@@ -54,10 +54,10 @@ $color-footer: #353434;
   width: 280px;
   height: 250px;
   margin-bottom: -35px;
-  @media (max-width: 1440px) {
+  /*@media (max-width: 1440px) {
     width: 410px;
     height: 250px;
-  }
+  }*
   .boutonnouveau {
     margin-top: 15px;
     margin-left: 190px;
@@ -69,67 +69,66 @@ $color-footer: #353434;
     background-color: var($color-secondary);
     color: var($color-texte-boutonnouveau);
     text-align: center;
-    @media (max-width: 1440px) {
+    /*@media (max-width: 1440px) {
       margin-left: 325px;
       font-size: small;
       width: 70px;
       height: 20px;
-    }
-  }
-  a {
-    text-decoration: none;
-    cursor: pointer;
+    }*/
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var($color-police-text);
+}
+img {
+  width: 100%;
+  height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.card-content {
+  justify-content: space-between;
+  padding-left: 5px;
+  .card-txt {
+    height: 50px;
     color: var($color-police-text);
   }
-  img {
-    width: 100%;
-    height: 190px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
+  .card-title {
+    height: 10px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    font-size: large;
+    font-weight: bold;
   }
+  .card-subtitle {
+    font-size: medium;
+  }
+}
+.icone-Coeurvide {
+  display: flex;
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-top: -40px;
+  color: var($color-body-origine);
+  border: var($color-police-text);
 
-  .card-content {
-    justify-content: space-between;
-    padding-left: 5px;
-    .card-txt {
-      height: 50px;
-      color: var($color-police-text);
-    }
-    .card-title {
-      height: 10px;
-      margin-top: 5px;
-      margin-bottom: 4px;
-      font-size: large;
-      font-weight: bold;
-    }
-    .card-subtitle {
-      font-size: medium;
-    }
-  }
-  .icone-Coeurvide {
-    display: flex;
-    float: right;
-    width: 40px;
-    height: 40px;
-    margin-top: -40px;
+  fa-heart {
     color: var($color-body-origine);
-    border: var($color-police-text);
-
-    fa-heart {
-      color: var($color-body-origine);
-      background-color: var($color-police-text);
-      border-radius: 50%;
-      padding: 0.2em;
-    }
-    .fa-heart::before {
-      content: "\f004";
-      font-weight: bold;
-      transition: color -0.2s ease-out;
-    }
-    .fa-heart:hover::before {
-      color: var($color-primary);
-      cursor: pointer;
-    }
+    background-color: var($color-police-text);
+    border-radius: 50%;
+    padding: 0.2em;
+  }
+  .fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color -0.2s ease-out;
+  }
+  .fa-heart:hover::before {
+    color: var($color-primary);
+    cursor: pointer;
   }
 }
