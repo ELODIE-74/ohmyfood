@@ -398,7 +398,7 @@ footer i {
 } /*# sourceMappingURL=footer.css.map */
 
 /**Media queries desktop**/
-/*@media (max-width: 1440px) {
+@media all and (max-width: 1440px) {
   .Fonctionnement {
     display: flex;
     flex-direction: row;
@@ -408,6 +408,14 @@ footer i {
     display: flex;
     justify-content: center;
     margin-right: 120px;
+  }
+  .directionrCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: flex-start;
   }
   .cards {
     width: 410px;
@@ -438,4 +446,4 @@ footer i {
     gap: 15px;
     padding-top: 10px;
   }
-}*/
+}
