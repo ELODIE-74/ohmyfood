@@ -110,18 +110,6 @@ body h1 {
     opacity: 0;
   }
 }
-
-/*@keyframes homepage {
-  0% {
-    transform: (opacity(0.4));
-  }
-  50% {
-    transform: (opacity(1));
-  }
-  100% {
-    transform: (opacity(1.5));
-  }
-}*/
 /*header homepage*/
 header {
   display: flex;
@@ -202,6 +190,14 @@ header,
   margin-left: 10px;
   gap: 15px;
 }
+@media (max-width: 1440px) {
+  .Fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 .Fonctionnement .Title {
   font-size: x-large;
   font-weight: bold;
@@ -210,6 +206,7 @@ header,
   justify-content: flex-start;
   margin-right: 100px;
 }
+
 .Fonctionnement .alignement .chiffre {
   position: absolute;
   z-index: 1;
@@ -276,6 +273,21 @@ header,
   margin-left: -130px;
   margin-top: 10px;
 }
+@media (max-width: 1440px) {
+  .Restaurants-cardsNew {
+    display: flex;
+    justify-content: center;
+    margin-right: 120px;
+  }
+  .directionrCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: flex-start;
+  }
+}
 
 .cards {
   margin-right: 15px;
@@ -289,6 +301,12 @@ header,
   margin-bottom: -35px;
   position: relative;
 }
+@media (max-width: 1440px) {
+  .cards {
+    width: 410px;
+    height: 250px;
+  }
+}
 .cards .boutonnouveau {
   margin-top: 15px;
   margin-left: 190px;
@@ -300,6 +318,14 @@ header,
   background-color: var(--color-tertiaire);
   color: var(--color-texte-boutonnouveau);
   text-align: center;
+}
+@media (max-width: 1440px) {
+  .cards .boutonnouveau {
+    margin-left: 325px;
+    font-size: small;
+    width: 70px;
+    height: 20px;
+  }
 }
 .cards a {
   text-decoration: none;
@@ -313,6 +339,7 @@ header,
   border-top-right-radius: 10px;
   object-fit: cover;
 }
+
 .cards .card-content {
   justify-content: space-between;
   padding-left: 5px;
@@ -366,6 +393,16 @@ footer {
   background-color: var(--color-footer);
   color: var(--color-body-origine);
 }
+@media (max-width: 1440px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    font-size: small;
+    padding-top: 50px;
+    margin-right: 30px;
+  }
+}
 footer .imglogobas {
   width: 100px;
   height: 30px;
@@ -373,9 +410,16 @@ footer .imglogobas {
   margin-bottom: 5px;
   margin-right: 150px;
 }
+
 footer .footer-content {
   flex-direction: column;
   margin-right: 100px;
+}
+@media (max-width: 1440px) {
+  footer .footer-content {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 footer .footer-content a:hover {
   text-decoration: none;
@@ -387,6 +431,15 @@ footer ul {
   justify-content: flex-start;
   padding-left: 20px;
   width: 100%;
+}
+@media (max-width: 1440px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-top: 10px;
+  }
 }
 footer li {
   list-style: none;

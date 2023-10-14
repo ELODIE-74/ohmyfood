@@ -5,6 +5,13 @@
   margin-bottom: 80px;
   margin-left: 15px;
 }
+@media (max-width: 1440px) {
+  .Restaurants-cardsNew {
+    display: flex;
+    justify-content: center;
+    margin-right: 120px;
+  }
+}
 
 .title {
   display: flex;
@@ -19,10 +26,20 @@
   margin-left: -130px;
   margin-top: 10px;
 }
+@media (max-width: 1440px) {
+  .directionrCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: flex-start;
+  }
+}
 
 .cards {
   margin-right: 15px;
-  background-color: white;
+  background-color: var(#fff);
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -30,6 +47,12 @@
   width: 280px;
   height: 250px;
   margin-bottom: -35px;
+}
+@media (max-width: 1440px) {
+  .cards {
+    width: 410px;
+    height: 250px;
+  }
 }
 .cards .boutonnouveau {
   margin-top: 15px;
@@ -39,14 +62,22 @@
   position: absolute;
   width: 80px;
   height: 25px;
-  background-color: #99E2D0;
-  color: green;
+  background-color: var(#ff79da);
+  color: var(green);
   text-align: center;
+}
+@media (max-width: 1440px) {
+  .cards .boutonnouveau {
+    margin-left: 325px;
+    font-size: small;
+    width: 70px;
+    height: 20px;
+  }
 }
 .cards a {
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: var(#000);
 }
 .cards img {
   width: 100%;
@@ -61,7 +92,7 @@
 }
 .cards .card-content .card-txt {
   height: 50px;
-  color: black;
+  color: var(#000);
 }
 .cards .card-content .card-title {
   height: 10px;
@@ -79,11 +110,12 @@
   width: 40px;
   height: 40px;
   margin-top: -40px;
-  color: black;
+  color: var(#fff);
+  border: var(#000);
 }
 .cards .icone-Coeurvide fa-heart {
-  color: #FFF;
-  background-color: #000;
+  color: var(#fff);
+  background-color: var(#000);
   border-radius: 50%;
   padding: 0.2em;
 }
@@ -93,6 +125,6 @@
   transition: color -0.2s ease-out;
 }
 .cards .icone-Coeurvide .fa-heart:hover::before {
-  color: #9356DC;
+  color: var(#9356dc);
   cursor: pointer;
 }/*# sourceMappingURL=cardsrestaurants.css.map */

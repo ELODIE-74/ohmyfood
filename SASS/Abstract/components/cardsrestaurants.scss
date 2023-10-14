@@ -1,9 +1,27 @@
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiaire: #99e2d0;
+$color-placeholder-header: #d3d3d3;
+$color-back-body: #e5e7e9;
+$color-police-text: #000;
+$color-body-origine: #fff;
+$color-header: #f0f0f2;
+$color-shadow: #85929e;
+$color-shadow-reservation: #cacfd2;
+$color-icones: grey;
+$color-texte-boutonnouveau: green;
+$color-footer: #353434;
 .Restaurants-cardsNew {
   display: flex;
   justify-content: center;
   margin-top: 25px;
   margin-bottom: 80px;
   margin-left: 15px;
+  @media (max-width: 1440px) {
+    display: flex;
+    justify-content: center;
+    margin-right: 120px;
+  }
 }
 .title {
   display: flex;
@@ -17,6 +35,14 @@
   flex-direction: column;
   margin-left: -130px;
   margin-top: 10px;
+  @media (max-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: flex-start;
+  }
 }
 .cards {
   margin-right: 15px;
@@ -28,6 +54,10 @@
   width: 280px;
   height: 250px;
   margin-bottom: -35px;
+  @media (max-width: 1440px) {
+    width: 410px;
+    height: 250px;
+  }
   .boutonnouveau {
     margin-top: 15px;
     margin-left: 190px;
@@ -39,6 +69,12 @@
     background-color: var($color-secondary);
     color: var($color-texte-boutonnouveau);
     text-align: center;
+    @media (max-width: 1440px) {
+      margin-left: 325px;
+      font-size: small;
+      width: 70px;
+      height: 20px;
+    }
   }
   a {
     text-decoration: none;
@@ -52,6 +88,7 @@
     border-top-right-radius: 10px;
     object-fit: cover;
   }
+
   .card-content {
     justify-content: space-between;
     padding-left: 5px;
@@ -76,7 +113,9 @@
     width: 40px;
     height: 40px;
     margin-top: -40px;
-    color: var($color-police-text);
+    color: var($color-body-origine);
+    border: var($color-police-text);
+
     fa-heart {
       color: var($color-body-origine);
       background-color: var($color-police-text);

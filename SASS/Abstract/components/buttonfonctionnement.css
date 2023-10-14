@@ -7,6 +7,13 @@
   margin-left: 10px;
   gap: 15px;
 }
+@media (max-width: 1440px) {
+  .Fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .Fonctionnement .Title {
   font-size: x-large;
   font-weight: bold;
@@ -19,8 +26,8 @@
   position: absolute;
   z-index: 1;
   font-size: large;
-  color: white;
-  background-color: #9356dc;
+  color: var(#fff);
+  background-color: var(#9356dc);
   text-align: center;
   border-radius: 100px;
   margin-top: 15px;
@@ -34,8 +41,8 @@
   text-align: center;
   width: 260px;
   height: 50px;
-  background-color: #f0f0f2;
-  color: black;
+  background-color: var(#f0f0f2);
+  color: var(#000);
   border-radius: 1.5em;
   border: none;
   padding: 10px 12px 10px 12px;
@@ -49,5 +56,5 @@
 }
 .Fonctionnement .alignement i {
   margin-right: 15px;
-  color: grey;
+  color: var(grey);
 }/*# sourceMappingURL=buttonfonctionnement.css.map */
