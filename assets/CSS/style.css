@@ -401,11 +401,24 @@ footer i {
 
 /*version css pages restaurants*/
 .imagehautrestaurants {
-  width: 100px;
-  height: 30px;
+  width: 100%;
+  height: 200px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #9356dc;
+  object-fit: cover;
+  position: relative;
+}
+.bodyrestaurants {
+  width: 100%;
+  height: 650px;
+  background-color: var(--color-back-body);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+}
+.titlerestaurants {
+  font-size: medium;
+  margin-left: 5px;
 }
 /*version css pages restaurants*/
 
