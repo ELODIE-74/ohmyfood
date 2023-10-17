@@ -402,15 +402,51 @@ footer i {
 } /*# sourceMappingURL=footer.css.map */
 
 /*version css pages restaurants*/
+.headerrestaurants {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 80px;
+  width: 46vh;
+}
+.headerrestaurants .imglogohaut {
+  display: flex;
+  margin-right: 30px;
+}
+.headerrestaurants .fa-arrow-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -40px;
+}
 .imagehautrestaurants {
-  width: 100%;
-  height: 800px;
-  margin-top: 5px;
+  width: 46vh;
+  height: 40%;
+  margin-top: 0;
   margin-bottom: 5px;
   object-fit: cover;
   position: relative;
 }
 .bodyrestaurants {
+  margin-top: -45px;
+  width: 42vh;
+  background-color: var(--color-back-body);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  text-align: center;
+}
+.bodyrestaurants .titlerestaurants {
+  display: flex;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Shrikland";
+  margin-left: 5px;
+}
+.bodyrestaurants .titlerestaurants .icone-Coeurvide {
+  display: flex;
+  flex-direction: row;
+} /*# sourceMappingURL=bodyrestaurants.css.map */
+/*.bodyrestaurants {
   margin-top: -45px;
   width: 100%;
   height: 650px;
@@ -422,7 +458,7 @@ footer i {
 .titlerestaurants {
   font-size: medium;
   margin-left: 5px;
-}
+}*/
 /*version css pages restaurants*/
 
 /**Media queries desktop**/

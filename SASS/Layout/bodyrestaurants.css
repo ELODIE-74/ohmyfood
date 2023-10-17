@@ -1,0 +1,21 @@
+.bodyrestaurants {
+  margin-top: -45px;
+  width: 42vh;
+  background-color: var(--color-back-body);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  text-align: center;
+}
+.bodyrestaurants .titlerestaurants {
+  display: flex;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Shrikland";
+  margin-left: 5px;
+}
+.bodyrestaurants .titlerestaurants .icone-Coeurvide {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}/*# sourceMappingURL=bodyrestaurants.css.map */
