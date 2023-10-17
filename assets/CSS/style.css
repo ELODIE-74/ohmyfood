@@ -17,6 +17,7 @@
   --color-icones: grey;
   --color-texte-boutonnouveau: green;
   --color-footer: #353434;
+  --color-loader-text: #1e90ff;
 }
 
 body {
@@ -34,21 +35,21 @@ body h1 {
 }
 /*loader chargement*/
 .section-loader {
+  z-index: 100;
   background: linear-gradient(#ff79da, #99e2d0, #9356dc);
-  height: 100%;
-  width: 100%;
-  line-height: 50px;
+  width: 210vh;
+  line-height: 240vh;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  font-size: 20px;
-  color: var(--color-police-text);
+  font-size: 100px;
+  color: var(--color-loader-text);
   text-align: center;
   opacity: 0.8;
   position: absolute;
   animation-duration: 5s;
   animation-name: grow;
-  animation-iteration-count: alternate;
+  animation-iteration-count: 1s forwards;
   opacity: 0%;
   backdrop-filter: invert(50%);
 }
@@ -68,7 +69,7 @@ body h1 {
   left: 0;
   top: 0;
   width: 10px;
-  height: 30px;
+  height: 150px;
   background-color: var(--color-primary);
   animation: grow 1.5s linear infinite;
 }
@@ -80,7 +81,7 @@ body h1 {
   left: 15px;
   top: 0;
   width: 10px;
-  height: 30px;
+  height: 150px;
   background-color: var(--color-secondary);
   animation: grow 1.5s linear -0.5s infinite;
 }
@@ -90,9 +91,9 @@ body h1 {
   display: block;
   position: absolute;
   left: 30px;
-  top: 0;
+  top: 0px;
   width: 10px;
-  height: 30px;
+  height: 150px;
   background-color: var(--color-tertiaire);
   animation: grow 1.5s linear -1s infinite;
 }
@@ -110,6 +111,7 @@ body h1 {
     opacity: 0;
   }
 }
+
 /*header homepage*/
 header {
   display: flex;
@@ -432,14 +434,15 @@ footer i {
   }
 
   .Fonctionnement {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .Fonctionnement .alignement {
     display: flexbox;
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .Restaurants-cardsNew {
