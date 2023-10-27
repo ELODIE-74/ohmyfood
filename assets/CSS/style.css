@@ -405,59 +405,8 @@ footer i {
 /*************************************************************************/
 /*VERSION CSS PAGE RESTAURANTS*/
 
-.headerrestaurants {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  width: 27%;
-}
-.headerrestaurants .imglogohaut {
-  display: flex;
-  margin-right: 10px;
-}
-.headerrestaurants .fa-arrow-left {
-  display: flex;
-  justify-content: flex-start;
-  padding-right: 50px;
-}
-.imagehautrestaurants {
-  display: flex;
-  align-items: center;
-  width: 27%;
-  height: 20%;
-  margin-top: 0;
-  margin-bottom: 5px;
-  object-fit: cover;
-  position: relative;
-}
-.bodyrestaurants {
-  margin-top: -45px;
-  width: 310px;
-
-  background-color: var(--color-back-body);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  position: absolute;
-  text-align: center;
-}
-.bodyrestaurants .titlerestaurants {
-  display: flex;
-  font-size: x-large;
-  font-weight: bold;
-  font-family: "Shrikland";
-  margin-left: 5px;
-}
-.bodyrestaurants .titlerestaurants .icone-Coeurvide {
-  display: flex;
-  flex-direction: row;
-} /*# sourceMappingURL=bodyrestaurants.css.map */
-.hautbodyrestaurants {
-  display: flex;
-  flex-direction: row;
-}
-
 footer {
-  position: fixed bottom;
+  position: bottom;
 }
 
 /*version css pages restaurants*/
