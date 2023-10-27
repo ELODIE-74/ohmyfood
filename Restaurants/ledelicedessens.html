@@ -17,47 +17,89 @@
     <link rel="stylesheet" href="../assets/CSS/style.css" />
   </head>
   <body>
-    <div class="main-container">
+    <!--header des restaurants-->
       <header class="headerrestaurants">
+        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a
+        ><!--icone retour header-->
+        <div class="imglogohaut">
         <img
           class="imglogohaut"
           src="../assets/images/logo/ohmyfood.png"
           alt="logo ohmyfood"
         />
-        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a
-        ><!--icone retour header-->
+        </div>
       </header>
-      <main>
+      <!--mainsrestaurants choix cartes-->
+      <main class="bodyrestaurants">
+        <!--image du header restaurants-->
+        <div class="menu-image">
         <img
-          class="imagehautrestaurants"
           src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
           alt="photo louis ledelicedessens"
         />
-        <div class="bodyrestaurants">
+        </div>
+        
+        <!--section plats entrées-->
+        <section class="menusrestaurants">
+          <div class="titlerestaurants">
           <h1>Le délice des sens</h1>
           <div class="icone-Coeurvide">
             <i class="fa-regular fa-heart"></i>
           </div>
-
-          <section class="Entree">
+        </div>
+  
+        <!--menus containor-->
+          <div class="platsRestaurants animationPlats">
             <h2>ENTRÉES</h2>
-            <div class="choixentree1">
+            <div class="menusPlatsContent">
+              <!--Plats divers-->
+              <!--Entrées-->
+              <article class="plats">
+                <div class="choixcontent">
+                  <div class="plats-title">
               <h3>Tartare de thon</h3>
-              <p>Assaisonné au yuzu<span class="euro">25€</span></p>
-            </div>
+              <p>Assaisonné au yuzu</p>
+                  </div>
+                  <div class="prixplats">
+                    <span>25€</span></p>
+                  </div>
+              <div class="plats-valide">
+                <i class="fa-solid fa-circle-valide"></i>
+              </div>
+            </article>
 
-            <div class="choixentree2">
+            <!--Plats divers-->
+            <article class="plats">
+                <div class="choixcontent">
+                  <div class="plats-title">
               <h3>Bouchée de homard croustillant</h3>
-              <p>
-                Et sa farandole de petits légumes<span class="euro">35€</span>
-              </p>
+              <p>Et sa farandole de petits légumes</p>
             </div>
+              <div class="prixplats">
+                    <span>35€</span></p>
+                  </div>
+              <div class="plats-valide">
+                <i class="fa-solid fa-circle-valide"></i>
+              </div>
+            </article>
 
-            <div class="choixentree3">
+           <article class="plats">
+                <div class="choixcontent">
+                  <div class="plats-title">
               <h3>Velouté de cèpes</h3>
-              <p>Aux truffes<span class="euro">20€</span></p>
+              <p>Aux truffes</p>
             </div>
-          </section>
+              <div class="prixplats">
+                    <span>20€</span></p>
+                  </div>
+              <div class="plats-valide">
+                <i class="fa-solid fa-circle-valide"></i>
+              </div>
+            </article>
+            </div>
+          </div>
+
+          
 
           <section class="Plats">
             <h2>PLATS</h2>
@@ -102,7 +144,7 @@
           <a href="#target_blank" class="btn-Explorer">
             Explorez nos restaurants</a
           >
-       
+        </section>
       </main>
        </div>
       <footer>

@@ -404,6 +404,29 @@ footer i {
 } /*# sourceMappingURL=footer.css.map */
 /*************************************************************************/
 /*VERSION CSS PAGE RESTAURANTS*/
+.headerrestaurants {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerrestaurants .fa-arrow-left {
+  float: left;
+}
+.headerrestaurants img {
+  width: 100px;
+  height: 30px;
+}
+.bodyrestaurants .menu-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 230px;
+}
+.bodyrestaurants .menu-image .img {
+  width: 25%;
+  height: 50px;
+}
 
 footer {
   position: bottom;
