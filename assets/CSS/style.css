@@ -247,6 +247,7 @@ header,
   
 }
 /*section cards restaurants*/
+
 .Restaurants-cardsNew {
   display: flex;
   justify-content: center;
@@ -401,12 +402,9 @@ footer li {
 footer i {
   margin-right: 8px;
 } /*# sourceMappingURL=footer.css.map */
-
+/*************************************************************************/
 /*VERSION CSS PAGE RESTAURANTS*/
-.BODY2 {
-  display: flex;
-  justify-content: center;
-}
+
 .headerrestaurants {
   display: flex;
   flex-direction: row-reverse;
@@ -461,20 +459,11 @@ footer i {
 footer {
   position: fixed bottom;
 }
-/*.bodyrestaurants {
-  margin-top: -45px;
-  width: 100%;
-  height: 650px;
-  background-color: var(--color-back-body);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  position: absolute;
-}
-*/
-/*version css pages restaurants*/
 
-/**Media queries desktop**/
-@media (min-width: 767px) and (max-width: 1440px) {
+/*version css pages restaurants*/
+/***************************************************************************************/
+/**Media queries tablette + desktop**/
+@media only screen and (min-width: 1024px) {
   * {
     margin-right: 0;
   }
@@ -482,7 +471,7 @@ footer {
     margin-right: 0;
   }
 
-  .Fonctionnement {
+  /*.Fonctionnement {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -490,6 +479,13 @@ footer {
   }
   .fonctionnement .title {
     justify-content: flex-start;
+  }*/
+  .Fonctionnent {
+    display: flex;
+    flex-direction: column;
+  }
+  .Fonctionnent .alignement {
+    display: flex;
   }
 
   .Restaurants-cardsNew {
@@ -539,5 +535,15 @@ footer {
     justify-content: flex-end;
     gap: 15px;
     padding-top: 10px;
+  }
+}
+/******************Media queries mobile********************/
+@media only screen and (min-width: 768px) {
+  footer {
+    align-items: center;
+    padding: 25px 22px;
+  }
+  footer ul li {
+    justify-content: center;
   }
 }
