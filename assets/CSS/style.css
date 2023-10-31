@@ -421,6 +421,7 @@ footer i {
 .headerrestaurants .fa-arrow-left {
   float: left;
   padding-left: 10px;
+  color: #000;
 }
 .headerrestaurants img {
   width: 100px;
@@ -551,7 +552,11 @@ footer {
   .main-container {
     margin-right: 0;
   }
-  .alignement {
+  .Fonctionnement {
+    display: flex;
+    flex-direction: row;
+  }
+  .Fonctionnement .alignement {
     display: flex;
     flex-direction: row;
   }
@@ -613,6 +618,65 @@ footer {
     padding-top: 10px;
   }
 }
+/*desktop pages restaurants*/
+@media only screen and (min-width: 1024px) {
+  .headerrestaurants {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .headerrestaurants .fa-arrow-left {
+    float: left;
+    margin-left: -210px;
+    width: 150px;
+    color: #000;
+  }
+  .headerrestaurants img {
+    margin-left: -200px;
+    width: 150px;
+    height: 35px;
+  }
+
+  .bodyrestaurants .menu-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .bodyrestaurants {
+    justify-content: center;
+    align-self: center;
+  }
+  .menusrestaurants .titlerestaurants,
+  .icone-Coeurvide {
+    margin-left: 80px;
+  }
+  .menusrestaurants .titlerestaurants .icone-Coeurvide {
+    margin-left: -200px;
+  }
+  .menusrestaurants {
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    margin-top: -40px;
+    width: 70%;
+    height: 100%;
+    padding: 40px;
+  }
+  .platsRestaurants {
+    align-items: center;
+    width: 90%;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .btn-Explorerestaurants {
+    width: 35%;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
 /******************Media queries mobile********************/
 @media only screen and (min-width: 768px) {
   /* .directionrCards {
