@@ -341,23 +341,22 @@ header,
   width: 40px;
   height: 40px;
   margin-top: -40px;
-  color: var(--color-police-text);
+  /* color: var(--color-police-text);*/
 }
 .cards .icone-Coeurvide fa-heart {
   color: var(--color-body-origine);
-  background-color: var(--color-police-text);
+  background-color: transparent;
   border-radius: 50%;
   padding: 0.2em;
 }
 .cards .icone-Coeurvide .fa-heart::before {
-  content: "\f004";
   font-weight: bold;
   transition: color -0.2s ease-out;
 }
 .cards .icone-Coeurvide .fa-heart:hover::before {
   color: var(--color-primary);
   cursor: pointer;
-} /*# sourceMappingURL=cardsrestaurants.css.map */
+}
 /*footer*/
 footer {
   width: 100%;
@@ -549,19 +548,27 @@ footer {
   }
   .Fonctionnement {
     display: flex;
-    flex-direction: row;
   }
-  .Fonctionnement .alignement {
-    display: flex;
+  .alignement {
+    margin-top: 40px;
+    margin-bottom: 40px;
     flex-direction: row;
+    justify-items: flex-start;
+    align-items: flex-start;
+    margin-right: 50px;
   }
+  .alignement .btnPaintMenu {
+    margin-top: 15px;
+    padding-left: -15px;
+  }
+
   .Fonctionnement .Title {
     font-size: x-large;
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin-right: 50px;
+    justify-content: center;
+    margin-left: 80px;
   }
 
   .Restaurants-cardsNew {
@@ -580,6 +587,7 @@ footer {
     width: 410px;
     height: 250px;
   }
+
   .cards .boutonnouveau {
     margin-left: 325px;
     font-size: small;
