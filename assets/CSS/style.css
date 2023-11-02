@@ -266,6 +266,7 @@ header,
   flex-direction: column;
   margin-left: -130px;
   margin-top: 10px;
+  width: 100vw;
 }
 .cards {
   margin-right: 15px;
@@ -486,10 +487,13 @@ section .menusrestaurants {
   border-radius: 20px;
   line-height: 5px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 0px;
 }
 .plats-title h3 {
   font-size: medium;
-  padding-top: 15px;
+
   padding-left: 10px;
 }
 .plats-title p {
