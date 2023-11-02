@@ -23,6 +23,7 @@
 body {
   background-color: var(--color-body-origine);
   margin: 0;
+  animation-delay: panorama 2s linear forwards;
 }
 body .logoposition {
   font-family: "Shrikhand";
@@ -35,76 +36,88 @@ body h1 {
 }
 
 /*loader chargement*/
-.section {
-  background-color: #16a085;
-  height: 800px;
-  line-height: 800px;
+.section-loader {
+  background: linear-gradient(#ff79da, #99e2d0, #9356dc);
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  width: 210vh;
+  line-height: 240vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: var(--color-police-text);
+  font-size: 100px;
+  color: var(--color-loader-text);
+  text-align: center;
+  opacity: 0.8;
+  position: absolute;
+  animation-duration: 5s;
+  animation-name: grow;
+  animation-iteration-count: alternate;
+  animation-iteration-count: 1s forwards;
+  opacity: 0%;
+  backdrop-filter: invert(50%);
 }
-
 .loader {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
 }
-/*loader quart de cercle*/
-.loader-quart {
-  border-radius: 50px;
-  border: 6px solid rgba(255, 255, 255, 0.4);
-}
-.loader-quart:after {
+.loader-bars:before {
   content: "";
+  display: block;
   position: absolute;
-  top: -6px;
-  left: -6px;
-  bottom: -6px;
-  right: -6px;
-  border-radius: 50px;
-  border: 6px solid transparent;
-  border-top-color: #fff;
-  animation: spin 10s linear infinite;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  height: 150px;
+  background-color: var(--color-primary);
+  animation: grow 1.5s linear infinite;
 }
-@keyframes spin {
+.loader-bars:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 10px;
+  height: 30px;
+  height: 150px;
+  background-color: var(--color-secondary);
+  animation: grow 1.5s linear -0.5s infinite;
+}
+.loader-bars span {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  top: 0px;
+  width: 10px;
+  height: 30px;
+  height: 150px;
+  background-color: var(--color-tertiaire);
+  animation: grow 1.5s linear -1s infinite;
+}
+@keyframes grow {
   0% {
-    transform: rotate(0deg);
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    transform: scaleY(0);
+    opacity: 0;
   }
 }
-/*.loader {
-  width: 100%;
-  height: 135%;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-.lettre {
-  color: #484848;
-  font-size: 80px;
-  letter-spacing: 15px;
-  margin-bottom: 150px;
-  animation: flash 2s linear forwards;
-}
-@keyframes flash {
-  0% {
-    color: #9356dc;
-    text-shadow: 0 0 7px #9356dc;
-  }
-  90% {
-    color: #ff79da;
-    text-shadow: none;
-  }
-  100% {
-    color: #99e2d0;
-    text-shadow: 0 0 7px #99e2d0;
-    display: none;
-  }
-}*/
-
 /*loader*/
 /*header homepage*/
 header {
