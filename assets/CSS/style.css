@@ -178,7 +178,6 @@ header,
   margin-bottom: 10px;
 } /*# sourceMappingURL=homepage.css.map */
 /*section fonctionnement*/
-
 .Fonctionnement .Orientationalignement {
   display: grid;
   grid-template-columns: 1fr;
@@ -187,6 +186,7 @@ header,
   align-items: center;
   margin-left: -10px;
   gap: 15px;
+  padding-bottom: 0;
 }
 .Fonctionnement .Title {
   font-size: x-large;
@@ -551,13 +551,12 @@ footer {
   .main-container {
     margin-right: 0;
   }
-  .Fonctionnement .Title {
-    margin-left: -700px;
-  }
-  .Orientationalignement {
+
+  .Fonctionnement .Orientationalignement {
     display: flex;
     align-items: center;
-    margin-right: 60px;
+    margin-left: 15px;
+    margin-bottom: 50px;
   }
 
   .alignement .btnPaintMenu {
