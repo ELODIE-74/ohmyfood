@@ -178,7 +178,8 @@ header,
   margin-bottom: 10px;
 } /*# sourceMappingURL=homepage.css.map */
 /*section fonctionnement*/
-.Fonctionnement {
+
+.Fonctionnement .Orientationalignement {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -193,7 +194,7 @@ header,
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-right: 100px;
+  padding-left: 10px;
 }
 
 .Fonctionnement .alignement .chiffre {
@@ -204,7 +205,7 @@ header,
   background-color: var(--color-primary);
   text-align: center;
   border-radius: 100px;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-right: 5px;
   width: 20px;
   height: 20px;
@@ -217,14 +218,14 @@ header,
   height: 50px;
   background-color: var(--color-header);
   color: var(--color-police-text);
-  border-radius: 1.5em;
+  border-radius: 3em;
   border: none;
   padding: 10px 12px 10px 12px;
   font-size: medium;
   font-weight: bold;
   text-decoration: none;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 15px;
   cursor: pointer;
 }
@@ -232,7 +233,9 @@ header,
   margin-right: 15px;
   color: var(--color-icones);
 }
-
+.Fonctionnement .alignement .fa-store {
+  color: #9356dc;
+}
 /*.main-container {
   width: 100%;
   max-width: 1440px;
@@ -548,42 +551,39 @@ footer {
   .main-container {
     margin-right: 0;
   }
-  .Fonctionnement {
-    display: flex;
-  }
-  .alignement {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    flex-direction: row;
-    justify-items: flex-start;
-    align-items: flex-start;
-    margin-right: 50px;
-  }
-  .alignement .btnPaintMenu {
-    margin-top: 15px;
-    padding-left: -15px;
-  }
-
   .Fonctionnement .Title {
-    font-size: x-large;
-    font-weight: bold;
+    margin-left: -700px;
+  }
+  .Orientationalignement {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 80px;
+    align-items: center;
+    margin-right: 60px;
   }
 
+  .alignement .btnPaintMenu {
+    margin-top: 5px;
+    margin-right: 35px;
+  }
+  .Fonctionnement .alignement .fa-store {
+    color: #9356dc;
+  }
+  .Fonctionnement,
+  .Restaurants-cardsNew {
+    margin: 0px;
+  }
   .Restaurants-cardsNew {
     display: flex;
     justify-content: center;
+    margin-top: 0;
+    padding-left: 20px;
   }
   .directionrCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
-    row-gap: 30px;
-    justify-content: flex-start;
+    row-gap: 25px;
+    float: center;
   }
   .cards {
     width: 410px;
