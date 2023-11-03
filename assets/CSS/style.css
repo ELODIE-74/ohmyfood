@@ -403,6 +403,7 @@ footer i {
 .headerrestaurants .fa-arrow-left {
   float: left;
   padding-left: 10px;
+  margin-left: -60px;
   color: #000;
 }
 .headerrestaurants img {
