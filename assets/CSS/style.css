@@ -555,6 +555,7 @@ footer {
 
   .Fonctionnement .Orientationalignement {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-left: 15px;
     margin-bottom: 50px;
@@ -567,35 +568,35 @@ footer {
   .Fonctionnement .alignement .fa-store {
     color: #9356dc;
   }
-  .Fonctionnement,
+  /*.Fonctionnement,
   .Restaurants-cardsNew {
     margin: 0px;
-  }
+  }*/
   .Restaurants-cardsNew {
     display: flex;
     justify-content: center;
-    margin-top: 0;
-    padding-left: 20px;
   }
   .directionrCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
-    row-gap: 25px;
-    float: center;
+    row-gap: 30px;
+    justify-content: center;
+    padding-left: 15px;
+    width: 100vw;
   }
   .cards {
     width: 410px;
     height: 250px;
   }
-
   .cards .boutonnouveau {
     margin-left: 325px;
     font-size: small;
     width: 70px;
     height: 20px;
   }
+
   footer {
     display: flex;
     flex-direction: row-reverse;
