@@ -680,11 +680,15 @@ footer {
     padding: 40px;
   }
   .platsRestaurants {
+    display: grid;
     align-items: center;
     width: 90%;
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
   }
   .btn-Explorerestaurants {
     display: flex;
@@ -762,6 +766,54 @@ footer {
       transform: translateY(1%);
     }
   }
+
+  .plats:hover .plats-valide {
+    background-color: #99e2d0;
+    min-width: 60px;
+    height: 50px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -48px;
+    right: -62px;
+    transform: translateX(-62px);
+    transition: transform 750ms ease;
+  }
+  .plats:hover .plats-valide i {
+    transform: rotate(360deg);
+    transition: transform 1000ms ease;
+  }
+  .plats:hover .prixplats {
+    transform: translateX(-62px);
+    transition: transform 750ms ease;
+  }
+  /*.prixplats {
+    color: #000000;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    transform: translateX(0);
+    transition: transform 750ms ease;
+  }
+  .plats-valide {
+    background-color: #99e2d0;
+    min-width: 50px;
+    height: 25px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -55px;
+    transform: translateX(0);
+    transition: transform 750ms ease;
+  }
+  .plats-valide i {
+    color: #ffffff;
+  }*/
   /*Animation Plats restaurants*/
   .bodyrestaurants,
   footer {
