@@ -279,7 +279,6 @@ header,
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-top: 50px;
   width: 92%;
-  max-width: 100%;
   margin-bottom: -35px;
   position: relative;
 }
@@ -576,19 +575,25 @@ footer {
     display: flex;
     justify-content: center;
   }
+
   .directionrCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
-    justify-content: center;
     padding-left: 15px;
-    width: 100vw;
+    margin-left: 0;
+    /*width: 100vw;*/
   }
+  .directionrCards .cards {
+    margin-right: -60px;
+  }
+
   .cards {
     width: 410px;
     height: 250px;
+    position: relative;
   }
   .cards .boutonnouveau {
     margin-left: 325px;
@@ -629,6 +634,8 @@ footer {
   .headerrestaurants {
     width: 100%;
     justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .headerrestaurants .fa-arrow-left {
     float: left;
@@ -641,7 +648,10 @@ footer {
     width: 150px;
     height: 35px;
   }
-
+  .headerrestaurants,
+  .bodyrestaurants {
+    margin-top: -5px;
+  }
   .bodyrestaurants .menu-image {
     width: 100vw;
     height: 30vw;
@@ -767,7 +777,7 @@ footer {
     }
   }
 
-  .plats:hover .plats-valide {
+  .menusrestaurants .platsRestaurants .plats:hover .plats-valide {
     background-color: #99e2d0;
     min-width: 60px;
     height: 50px;
@@ -781,43 +791,36 @@ footer {
     transform: translateX(-62px);
     transition: transform 750ms ease;
   }
-  .plats:hover .plats-valide i {
+  .menusrestaurants .platsRestaurants .plats:hover .plats-valide i {
     transform: rotate(360deg);
     transition: transform 1000ms ease;
   }
-  .plats:hover .prixplats {
+  .menusrestaurants
+    .platsRestaurants
+    .plats:hover
+    .plats-valide
+    i
+    fa-solid
+    fa-circle-valide {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+  }
+  .menusrestaurants .platsRestaurants .plats:hover .prixplats {
     transform: translateX(-62px);
     transition: transform 750ms ease;
   }
-  /*.prixplats {
-    color: #000000;
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    transform: translateX(0);
-    transition: transform 750ms ease;
-  }
-  .plats-valide {
-    background-color: #99e2d0;
-    min-width: 50px;
-    height: 25px;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: -55px;
-    transform: translateX(0);
-    transition: transform 750ms ease;
-  }
-  .plats-valide i {
-    color: #ffffff;
-  }*/
+
   /*Animation Plats restaurants*/
   .bodyrestaurants,
   footer {
-    margin-top: 39px;
+    margin-bottom: 39px;
+  }
+  footer {
+    margin-bottom: 0;
   }
 }
 
