@@ -162,6 +162,7 @@ header,
 .reservation .exploration p {
   margin-top: 0px;
 }
+
 .reservation .exploration .btn-Explorer {
   width: 230px;
   height: 25px;
@@ -193,19 +194,19 @@ header,
   font-weight: bold;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .Fonctionnement .alignement .chiffre {
   position: absolute;
   z-index: 1;
+  padding-top: 4px;
   font-size: large;
   color: var(--color-body-origine);
   background-color: var(--color-primary);
   text-align: center;
   border-radius: 100px;
-  margin-top: 25px;
+  margin-top: 32px;
   margin-right: 5px;
   width: 20px;
   height: 20px;
@@ -214,17 +215,17 @@ header,
 .Fonctionnement .alignement .btnPaintMenu {
   position: relative;
   text-align: center;
-  width: 260px;
-  height: 50px;
+  width: 100%;
+  height: 65px;
   background-color: var(--color-header);
   color: var(--color-police-text);
-  border-radius: 3em;
+  border-radius: 20px;
   border: none;
   padding: 10px 12px 10px 12px;
   font-size: medium;
   font-weight: bold;
   text-decoration: none;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.1));
   margin-top: 10px;
   margin-left: 15px;
   cursor: pointer;
@@ -253,6 +254,8 @@ header,
   margin-left: 0px;
   width: 100%;
   background-color: var(--color-header);
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .Restaurants-cardsNew .title {
@@ -272,15 +275,16 @@ header,
   width: 100vw;
 }
 .cards {
-  margin-right: 15px;
   background-color: var(--color-body-origine);
   border-radius: 20px;
-  padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-top: 50px;
-  width: 92%;
-  margin-bottom: -35px;
-  position: relative;
+  width: 98%;
+  height: 250px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: -8px;
 }
 .cards img {
   width: 100%;
@@ -290,17 +294,18 @@ header,
   object-fit: cover;
 }
 .cards .boutonnouveau {
-  margin-top: 15px;
-  margin-left: 190px;
-  padding-top: 1.5px;
-  float: right;
+  top: 15px;
+  right: 15px;
+  padding-top: 6px;
   position: absolute;
   width: 80px;
   height: 25px;
   background-color: var(--color-tertiaire);
   color: var(--color-texte-boutonnouveau);
   text-align: center;
+  font-size: small;
 }
+
 .cards a {
   text-decoration: none;
   cursor: pointer;
@@ -314,22 +319,25 @@ header,
 .cards .card-content .card-txt {
   height: 50px;
   color: var(--color-police-text);
+  padding-left: 5px;
 }
 .cards .card-content .card-title {
   height: 10px;
   margin-top: 5px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   font-size: large;
   font-weight: bold;
 }
 .cards .card-content .card-subtitle {
   font-size: medium;
+  margin-top: 15px;
+  padding-left: 0;
 }
 .cards .icone-Coeurvide {
   display: flex;
   float: right;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-top: -40px;
   /* color: var(--color-police-text);*/
 }
@@ -495,8 +503,8 @@ footer i {
   cursor: pointer;
   margin-right: 5px;
 }
-.plats-title h3,
-p {
+.plats-title-h3,
+.plats-title-p {
   margin-top: 5px;
   padding-top: 1px;
   font-size: medium;
@@ -544,6 +552,11 @@ p {
 }
 
 .menusrestaurants,
+footer {
+  padding-top: 0;
+  margin-bottom: -50px;
+}
+.Restaurants-cardsNew,
 footer {
   padding-top: 0;
   margin-bottom: -50px;
@@ -681,10 +694,15 @@ footer {
     margin-left: 15px;
     margin-bottom: 50px;
   }
+  .Fonctionnement h2 {
+    display: flex;
 
+    margin-left: 8%;
+  }
   .alignement .btnPaintMenu {
     margin-top: 5px;
     margin-right: 35px;
+    width: 100%;
   }
   .Fonctionnement .alignement .fa-store {
     color: #9356dc;
@@ -693,26 +711,47 @@ footer {
     display: flex;
     justify-content: center;
   }
-
+  .Restaurants-cardsNew h2 {
+    display: flex;
+    margin-left: 8%;
+  }
+  .Restaurants-cardsNew .cards {
+    margin-top: 100px;
+  }
+  .Restaurants-cardsNew .directionrCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-left: -180px;
+  }
   .directionrCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
+    column-gap: 10px;
     row-gap: 30px;
     padding-left: 15px;
     margin-left: 0;
-    /*width: 100vw;*/
   }
   .directionrCards .cards {
-    margin-right: -60px;
+    margin-left: 20px;
   }
 
   .cards {
-    width: 410px;
-    height: 250px;
-    position: relative;
+    width: 80%;
+    height: 310px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
+  .cards img {
+    height: 250px;
+  }
+
   .cards .boutonnouveau {
     margin-left: 325px;
     font-size: small;
@@ -725,7 +764,6 @@ footer {
     flex-direction: row-reverse;
     justify-content: flex-start;
     font-size: medium;
-    padding-top: 50px;
     margin-right: 30px;
   }
   footer .imglogobas {
@@ -734,10 +772,12 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 15px;
+    padding-top: 35px;
   }
   footer .footer-content {
     display: flex;
     align-items: flex-end;
+    padding-top: 35px;
   }
   footer ul {
     display: flex;
@@ -780,7 +820,6 @@ footer {
     justify-content: center;
     justify-items: center;
   }
-
   .menusrestaurants .titlerestaurants {
     font-family: "Shrikhand";
   }
@@ -821,8 +860,8 @@ footer {
   .menusrestaurants .platsRestaurants .plats:hover .plats-valide {
     margin-right: 0;
   }
-  .plats-title h3,
-  p {
+  .plats-title-h3,
+  .plats-title-p {
     margin-top: 5px;
     padding-top: 1px;
     font-size: medium;
@@ -847,6 +886,7 @@ footer {
   }
   footer {
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
