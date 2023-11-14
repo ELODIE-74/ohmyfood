@@ -4,33 +4,27 @@
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  margin-left: 10px;
+  margin-left: -10px;
   gap: 15px;
-}
-@media (max-width: 1440px) {
-  .Fonctionnement {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+  padding-bottom: 0;
 }
 .Fonctionnement .Title {
   font-size: x-large;
   font-weight: bold;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 100px;
+  padding-left: 12px;
 }
 .Fonctionnement .alignement .chiffre {
   position: absolute;
   z-index: 1;
+  padding-top: 4px;
   font-size: large;
-  color: var(#fff);
-  background-color: var(#9356dc);
+  color: var(--color-body-origine);
+  background-color: var(--color-primary);
   text-align: center;
   border-radius: 100px;
-  margin-top: 15px;
+  margin-top: 32px;
   margin-right: 5px;
   width: 20px;
   height: 20px;
@@ -39,22 +33,45 @@
 .Fonctionnement .alignement .btnPaintMenu {
   position: relative;
   text-align: center;
-  width: 260px;
-  height: 50px;
-  background-color: var(#f0f0f2);
-  color: var(#000);
-  border-radius: 1.5em;
+  width: 100%;
+  height: 65px;
+  background-color: var(--color-header);
+  color: var(--color-police-text);
+  border-radius: 20px;
   border: none;
   padding: 10px 12px 10px 12px;
   font-size: medium;
   font-weight: bold;
   text-decoration: none;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  margin-top: 5px;
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.1));
+  margin-top: 10px;
   margin-left: 15px;
   cursor: pointer;
 }
 .Fonctionnement .alignement i {
   margin-right: 15px;
-  color: var(grey);
+  color: var(--color-icones);
+}
+.Fonctionnement .alignement .fa-store {
+  color: var(--color-primary);
+}
+@media (max-width: 1024px) {
+  .Fonctionnement .alignement .Orientationalignement {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .Fonctionnement .alignement h2 {
+    display: flex;
+    margin-left: 8%;
+  }
+  .Fonctionnement .alignement .alignement .fa-store {
+    color: var(--color-primary);
+  }
+  .Fonctionnement .alignement .alignement .btnPaintMenu {
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=buttonfonctionnement.css.map */

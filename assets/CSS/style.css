@@ -235,7 +235,7 @@ header,
   color: var(--color-icones);
 }
 .Fonctionnement .alignement .fa-store {
-  color: #9356dc;
+  color: var(--color-primary);
 }
 /*.main-container {
   width: 100%;
@@ -339,7 +339,6 @@ header,
   width: 30px;
   height: 30px;
   margin-top: -40px;
-  /* color: var(--color-police-text);*/
 }
 .cards .icone-Coeurvide .fa-solid {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -705,7 +704,7 @@ footer {
   }
 
   .Fonctionnement .alignement .fa-store {
-    color: #9356dc;
+    color: var(--color-primary);
   }
   .Restaurants-cardsNew {
     display: flex;
@@ -822,16 +821,19 @@ footer {
   }
   .menusrestaurants .titlerestaurants {
     font-family: "Shrikhand";
+    font-weight: 300;
   }
   .menusrestaurants .titlerestaurants,
   .icone-Coeurvide {
     margin-left: 80px;
+    height: 50px;
   }
 
   .menusrestaurants .titlerestaurants .icone-Coeurvide1 {
     float: left;
     margin-left: -160px;
     margin-right: 50px;
+    font-weight: 300;
   }
   .menusrestaurants .titlerestaurants,
   .icone-Coeurvide1 {

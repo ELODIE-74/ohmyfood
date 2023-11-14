@@ -11,76 +11,72 @@ $color-shadow-reservation: #cacfd2;
 $color-icones: grey;
 $color-texte-boutonnouveau: green;
 $color-footer: #353434;
-.section-loader {
-  background: linear-gradient(#ff79da, #99e2d0, #9356dc);
-  height: 100%;
-  width: 100%;
-  line-height: 50px;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  font-size: 20px;
-  color: var(--color-police-text);
-  text-align: center;
-  opacity: 0.8;
-  position: absolute;
-  animation-duration: 5s;
-  animation-name: grow;
-  animation-iteration-count: alternate;
-  opacity: 0%;
-  backdrop-filter: invert(50%);
-}
 .loader {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  vertical-align: middle;
+  z-index: 100;
+  position: fixed;
+  animation: loadercercle 1s forwards;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(50deg, #99e2d0, #9356dc, #ff79da, #99e2d0);
+  .loaderConteneur {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loaderConteneurChargement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../../assets/images/logo/ohmyfood.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert(100%);
+    width: 200px;
+    height: 40px;
+  }
+  .loaderConteneurChargement::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 7px solid transparent;
+    border-top-color: green;
+    width: 280px;
+    height: 280px;
+    animation: cercle 800ms linear infinite;
+  }
+  .loaderConteneurChargement::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 7px solid transparent;
+    border-top-color: green;
+    width: 250px;
+    height: 250px;
+    animation: cercle 900ms linear reverse infinite;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 14px 1fr 14px;
+  grid-template-rows: 1fr auto;
   position: relative;
 }
-.loader-bars:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 10px;
-  height: 30px;
-  background-color: var($color-primary);
-  animation: grow 1.5s linear infinite;
-}
-.loader-bars:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 15px;
-  top: 0;
-  width: 10px;
-  height: 30px;
-  background-color: var($color-secondary);
-  animation: grow 1.5s linear -0.5s infinite;
-}
-.loader-bars span {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 30px;
-  top: 0;
-  width: 10px;
-  height: 30px;
-  background-color: var($color-tertiaire);
-  animation: grow 1.5s linear -1s infinite;
-}
-@keyframes grow {
-  0% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: scaleY(1);
+@keyframes cercle {
+  from {
+    transform: rotate(360deg);
     opacity: 1;
   }
-  100% {
-    transform: scaleY(0);
-    opacity: 0;
+  to {
+    transform: rotate(0deg);
+    opacity: 0.3;
+  }
+}
+@keyframes loadercercle {
+  to {
+    visibility: hidden;
+    display: none;
   }
 }

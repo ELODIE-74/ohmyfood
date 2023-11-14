@@ -4,32 +4,27 @@
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  margin-left: 10px;
+  margin-left: -10px;
   gap: 15px;
-  @media (max-width: 1440px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
+  padding-bottom: 0;
   .Title {
     font-size: x-large;
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin-right: 100px;
+    padding-left: 12px;
   }
   .alignement {
     .chiffre {
       position: absolute;
       z-index: 1;
+      padding-top: 4px;
       font-size: large;
-      color: var($color-body-origine);
-      background-color: var($color-primary);
+      color: var(--color-body-origine);
+      background-color: var(--color-primary);
       text-align: center;
       border-radius: 100px;
-      margin-top: 15px;
+      margin-top: 32px;
       margin-right: 5px;
       width: 20px;
       height: 20px;
@@ -38,24 +33,51 @@
     .btnPaintMenu {
       position: relative;
       text-align: center;
-      width: 260px;
-      height: 50px;
-      background-color: var($color-header);
-      color: var($color-police-text);
-      border-radius: 1.5em;
+      width: 100%;
+      height: 65px;
+      background-color: var(--color-header);
+      color: var(--color-police-text);
+      border-radius: 20px;
       border: none;
       padding: 10px 12px 10px 12px;
       font-size: medium;
       font-weight: bold;
       text-decoration: none;
-      filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-      margin-top: 5px;
+      filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.1));
+      margin-top: 10px;
       margin-left: 15px;
       cursor: pointer;
     }
     i {
       margin-right: 15px;
-      color: var($color-icones);
+      color: var(--color-icones);
+    }
+    .fa-store {
+      color: var(--color-primary);
+    }
+
+    @media (max-width: 1024px) {
+      .Orientationalignement {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-bottom: 50px;
+      }
+      h2 {
+        display: flex;
+        margin-left: 8%;
+      }
+
+      .alignement {
+        .fa-store {
+          color: var(--color-primary);
+        }
+        .btnPaintMenu {
+          margin-top: 5px;
+          margin-right: 10px;
+          width: 100%;
+        }
+      }
     }
   }
 }
