@@ -689,21 +689,21 @@ footer {
 
   .Fonctionnement .Orientationalignement {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
+    justify-content: space-around;
+    margin-left: 10px;
     margin-bottom: 50px;
   }
   .Fonctionnement h2 {
     display: flex;
-
     margin-left: 8%;
   }
+
   .alignement .btnPaintMenu {
     margin-top: 5px;
-    margin-right: 35px;
+    margin-right: 10px;
     width: 100%;
   }
+
   .Fonctionnement .alignement .fa-store {
     color: #9356dc;
   }
