@@ -385,9 +385,15 @@ footer .footer-content {
   flex-direction: column;
   margin-right: 100px;
 }
-
-footer .footer-content a:hover {
+footer a {
   text-decoration: none;
+  color: white;
+}
+footer a:active {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  /*transition: all 50ms ease-in-out;*/
 }
 
 footer .list {
