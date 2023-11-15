@@ -10,7 +10,7 @@
   --color-back-body: #e5e7e9;
   --color-police-text: #000;
   --color-body-origine: #fff;
-  --color-header: #f0f0f2;
+  --color-header: #f6f6f6;
   --color-shadow: #85929e;
   --color-shadow-reservation: #cacfd2;
   --color-footer: #353434;
@@ -238,7 +238,7 @@ header,
   color: var(--color-primary);
 }
 .Fonctionnement .alignement .btnPaintMenu:hover {
-  opacity: 4;
+  opacity: 2;
   background-color: #fff;
   transition: all 50ms ease-in-out;
 }
@@ -389,6 +389,7 @@ footer .footer-content {
 footer .footer-content a:hover {
   text-decoration: none;
 }
+
 footer .list {
   margin-right: 25px;
 }
@@ -404,7 +405,8 @@ footer li {
 }
 footer i {
   margin-right: 8px;
-} /*# sourceMappingURL=footer.css.map */
+}
+/*# sourceMappingURL=footer.css.map */
 /*************************************************************************/
 /*VERSION CSS PAGE RESTAURANTS*/
 .headerrestaurants {
@@ -416,15 +418,15 @@ footer i {
 .headerrestaurants .fa-arrow-left {
   float: left;
   padding-left: 10px;
-  margin-left: -60px;
+  margin-left: -70px;
   color: #000;
 }
-.headerrestaurants img {
+.headerrestaurants .imglogohaut {
   display: flex;
   justify-content: center;
-  width: 100px;
-  height: 30px;
-  padding-right: 10px;
+  width: 80px;
+  height: 25px;
+  padding-right: 35px;
 }
 .bodyrestaurants .menu-image {
   display: flex;
@@ -445,7 +447,7 @@ footer i {
 .menusrestaurants {
   position: relative;
   margin-top: -40px;
-  background-color: var(--color-back-body);
+  background-color: #f6f6f6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   width: 100%;
@@ -499,6 +501,7 @@ footer i {
 
 .plats {
   background-color: var(--color-body-origine);
+  box-shadow: 1px 2px 1px #b4b4b4;
   width: 100%;
   height: 55px;
   border-radius: 20px;
@@ -567,9 +570,7 @@ footer {
   padding-top: 0;
   margin-bottom: -50px;
 }
-footer {
-  position: bottom;
-}
+
 /*Animation plats restaurants*/
 .platsRestaurants:nth-child(2) h4 {
   animation-delay: 1.5s;
@@ -649,7 +650,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: -46px;
+  margin-top: -45px;
   right: -62px;
   margin-right: 10px;
   transform: translateX(-62px);
@@ -807,8 +808,8 @@ footer {
     width: 150px;
     color: #000;
   }
-  .headerrestaurants img {
-    margin-left: -260px;
+  .headerrestaurants .imglogohaut {
+    margin-left: -190px;
     width: 150px;
     height: 35px;
   }
