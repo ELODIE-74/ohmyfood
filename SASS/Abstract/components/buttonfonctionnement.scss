@@ -47,6 +47,11 @@
       margin-top: 10px;
       margin-left: 15px;
       cursor: pointer;
+      :hover {
+        opacity: 4;
+        background-color: #fff;
+        transition: all 50ms ease-in-out;
+      }
     }
     i {
       margin-right: 15px;
