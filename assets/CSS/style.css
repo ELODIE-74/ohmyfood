@@ -371,6 +371,7 @@ footer {
   padding-right: 30px;
   background-color: var(--color-footer);
   color: var(--color-body-origine);
+  font-family: "Roboto";
 }
 
 footer .imglogobas {
@@ -416,23 +417,25 @@ footer i {
 /*************************************************************************/
 /*VERSION CSS PAGE RESTAURANTS*/
 .headerrestaurants {
-  display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  position: relative;
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .headerrestaurants .fa-arrow-left {
-  float: left;
-  padding-left: 10px;
-  margin-left: -70px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
   color: #000;
 }
 .headerrestaurants .imglogohaut {
   display: flex;
-  justify-content: center;
-  width: 80px;
+  width: 100px;
   height: 25px;
-  padding-right: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .bodyrestaurants .menu-image {
   display: flex;
@@ -499,7 +502,7 @@ footer i {
 .platsRestaurants h4 {
   display: flex;
   justify-content: flex-start;
-  border-bottom: solid 2px green;
+  border-bottom: solid 3px var(--color-tertiaire);
   padding-bottom: 5px;
   width: 50px;
   font-weight: lighter;
@@ -648,7 +651,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99e2d0;
+  background-color: var(--color-tertiaire);
   min-width: 60px;
   height: 62px;
   border-radius: 0 15px 15px 0;
@@ -673,7 +676,7 @@ footer {
   text-overflow: ellipsis;
   font-size: 15px;
   line-height: 18px;
-  color: green;
+  color: var(--color-tertiaire);
 }
 .menusrestaurants .platsRestaurants .plats:hover .prixplats {
   transform: translateX(-62px);
@@ -778,6 +781,7 @@ footer {
     justify-content: flex-start;
     font-size: medium;
     margin-right: 30px;
+    font-family: "Roboto";
   }
   footer .imglogobas {
     width: 100px;
@@ -802,23 +806,6 @@ footer {
 }
 /*desktop + tablette pages restaurants*/
 @media only screen and (min-width: 1024px) {
-  .headerrestaurants {
-    width: 100%;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .headerrestaurants .fa-arrow-left {
-    float: left;
-    margin-left: -210px;
-    width: 150px;
-    color: #000;
-  }
-  .headerrestaurants .imglogohaut {
-    margin-left: -190px;
-    width: 150px;
-    height: 35px;
-  }
   .headerrestaurants,
   .bodyrestaurants {
     margin-top: -5px;
