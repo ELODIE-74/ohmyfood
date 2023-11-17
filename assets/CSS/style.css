@@ -871,7 +871,17 @@ footer {
     padding-left: 10px;
     overflow: visible;
   }
-
+  .plats .prixplats {
+    margin-top: -14px;
+    padding-bottom: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+  .menusrestaurants .platsRestaurants .plats:hover .plats-valide {
+    margin-top: -73px;
+    right: -62px;
+    margin-right: 2px;
+  }
   .bodyrestaurants,
   footer {
     margin-bottom: 39px;
