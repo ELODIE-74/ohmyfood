@@ -364,7 +364,7 @@ footer {
   /*width: 100%;*/
   padding-bottom: 20px;
   margin-top: 50px;
-  padding-right: 30px;
+  padding-right: 10px;
   background-color: var(--color-footer);
   color: var(--color-body-origine);
 }
@@ -372,9 +372,8 @@ footer {
 footer .imglogobas {
   width: 120px;
   height: 30px;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 5px;
-
   margin-left: 15px;
 }
 
