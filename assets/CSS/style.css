@@ -361,35 +361,34 @@ header,
 }
 /*footer*/
 footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  /*width: 100%;*/
   padding-bottom: 20px;
   margin-top: 50px;
   padding-right: 30px;
   background-color: var(--color-footer);
   color: var(--color-body-origine);
-  font-family: "Roboto";
 }
 
 footer .imglogobas {
-  width: 100px;
+  width: 120px;
   height: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-right: 160px;
+
+  margin-left: 15px;
 }
 
 footer .footer-content {
   flex-direction: column;
   margin-right: 100px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
 }
 footer a {
   text-decoration: none;
   color: white;
 }
+
 footer a:active {
   text-decoration: none;
   color: white;
@@ -403,7 +402,6 @@ footer .list {
 footer ul {
   justify-content: flex-start;
   padding-left: 20px;
-  width: 100%;
 }
 
 footer li {
@@ -411,7 +409,7 @@ footer li {
   padding-bottom: 10px;
 }
 footer i {
-  margin-right: 8px;
+  margin-right: 9px;
 }
 /*# sourceMappingURL=footer.css.map */
 /*************************************************************************/
@@ -420,7 +418,6 @@ footer i {
   flex-direction: row;
   justify-content: center;
   position: relative;
-  width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -511,37 +508,38 @@ footer i {
 .plats {
   background-color: var(--color-body-origine);
   box-shadow: 1px 2px 1px #b4b4b4;
-  width: 100%;
+  max-width: 100%;
   height: 55px;
   border-radius: 20px;
   line-height: 5px;
   margin-bottom: 20px;
   margin-top: 20px;
-  padding-top: 5px;
-  padding-bottom: 3px;
+  padding: 10px;
   cursor: pointer;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 .plats-title-h3,
 .plats-title-p {
   margin-top: 5px;
-  padding-top: 1px;
+  padding-top: -5px;
   font-size: medium;
-  line-height: 11px;
+  line-height: 18px;
   padding-left: 10px;
   width: 180px;
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis; /* Opera < 10 */
   text-overflow: ellipsis;
+  padding-bottom: -10px;
 }
 .plats .prixplats {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: -6px;
+  margin-top: -26px;
   padding-bottom: 10px;
-  padding-right: 10px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .plats-valide .fa-check {
   display: none;
@@ -626,11 +624,9 @@ footer {
 .platsRestaurants:nth-child(4) .plats > :nth-child(4) {
   animation-delay: 2.9s;
 }
-.platsRestaurants .plats-title {
-  position: relative;
-  height: 27px;
+.platsRestaurants .menusPlatsContent .plats {
   font-family: "roboto";
-  animation: animationPlats 0.5s backwards;
+  animation: animationPlats 0.8s backwards;
 }
 @keyframes animationPlats {
   0% {
@@ -653,13 +649,13 @@ footer {
   align-items: center;
   background-color: var(--color-tertiaire);
   min-width: 60px;
-  height: 62px;
+  height: 76px;
   border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: -45px;
+  margin-top: -73px;
   right: -62px;
   margin-right: 10px;
   transform: translateX(-62px);
@@ -782,14 +778,15 @@ footer {
     font-size: medium;
     margin-right: 30px;
     font-family: "Roboto";
+    width: 100%;
   }
   footer .imglogobas {
     width: 100px;
     height: 30px;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 5px;
     margin-right: 15px;
-    padding-top: 35px;
+    padding-top: 30px;
   }
   footer .footer-content {
     display: flex;
@@ -811,7 +808,7 @@ footer {
     margin-top: -5px;
   }
   .bodyrestaurants .menu-image {
-    width: 100vw;
+    /* width: 100%;*/
     height: 30vw;
     object-fit: cover;
   }
@@ -880,27 +877,5 @@ footer {
   footer {
     margin-bottom: 0;
     margin-top: 0;
-  }
-}
-
-/******************Media queries mobile********************/
-@media only screen and (min-width: 768px) {
-  /* .directionrCards {
-    width: 100%;
-  }
-  .cards {
-    width: 100%;
-  }
-  .cards img {
-    height: 190px;
-    object-fit: cover;
-  }*/
-
-  footer {
-    align-items: center;
-    padding: 25px 22px;
-  }
-  footer ul li {
-    justify-content: center;
   }
 }
