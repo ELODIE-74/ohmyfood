@@ -122,5 +122,10 @@
   padding-bottom: 0.5px;
 }
 
+@media (min-width: 1024px) {
+  .menusrestaurants .platsRestaurants .plats:hover .plats-valide {
+    right: -70px;
+  }
+}
 /*Animation Plats restaurants*/
 /*version css pages restaurants*//*# sourceMappingURL=animationplats.css.map */

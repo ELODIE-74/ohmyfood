@@ -70,11 +70,6 @@
   .menusrestaurants .icone-Coeurvide1 {
     justify-content: space-evenly;
   }
-  .menusrestaurants .platsRestaurants .plats:hover .plats-valide {
-    margin-top: -73px;
-    right: -62px;
-    margin-right: 2px;
-  }
 }
 
 .menusrestaurants,
