@@ -685,7 +685,6 @@ footer {
 .platsRestaurants .plats .plats-title-h3,
 .platsRestaurants .plats .plats-title-p {
   margin-top: 5px;
-  padding-top: -5px;
   font-size: medium;
   line-height: 18px;
   padding-left: 10px;
@@ -694,7 +693,6 @@ footer {
   overflow: hidden;
   -o-text-overflow: ellipsis; /* Opera < 10 */
   text-overflow: ellipsis;
-  padding-bottom: -10px;
 }
 .platsRestaurants .plats .prixplats {
   display: flex;
@@ -893,4 +891,4 @@ footer {
   }
 }
 /*Animation Plats restaurants*/
-/*version css pages restaurants*/ /*# sourceMappingURL=style.css.map */
+/*version css pages restaurants*//*# sourceMappingURL=style.css.map */

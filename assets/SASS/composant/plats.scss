@@ -23,7 +23,7 @@
     .plats-title-h3,
     .plats-title-p {
       margin-top: 5px;
-      padding-top: -5px;
+
       font-size: medium;
       line-height: 18px;
       padding-left: 10px;
@@ -32,7 +32,6 @@
       overflow: hidden;
       -o-text-overflow: ellipsis; /* Opera < 10 */
       text-overflow: ellipsis;
-      padding-bottom: -10px;
     }
     .prixplats {
       display: flex;
