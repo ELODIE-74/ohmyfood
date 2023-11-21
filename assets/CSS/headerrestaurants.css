@@ -1,0 +1,21 @@
+/*VERSION CSS PAGES RESTAURANTS*/
+.headerrestaurants {
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.headerrestaurants .fa-arrow-left {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #000;
+}
+.headerrestaurants .imglogohaut {
+  display: flex;
+  width: 150px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=headerrestaurants.css.map */

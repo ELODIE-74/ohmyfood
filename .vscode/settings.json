@@ -1,0 +1,20 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/assets/CSS"
+    },
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/assets/CSS"
+      /*"savePathReplacementPairs": null*/
+    }
+  ],
+  "liveSassCompile.settings.savePath": "/assets/CSS/",
+  "liveSassCompile.settings.includeItems": [],
+  "liveSassCompile.settings.forceBaseDirectory": "",
+  "liveSassCompile.settings.autoprefix": [],
+  "liveSassCompile.settings.useNewCompiler": false
+}

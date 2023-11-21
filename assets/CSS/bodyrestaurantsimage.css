@@ -1,0 +1,30 @@
+.bodyrestaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.bodyrestaurants .menu-image {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 60vw;
+}
+.bodyrestaurants .menu-image img {
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .bodyrestaurants {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+  .bodyrestaurants .menu-image {
+    height: 30vw;
+    object-fit: cover;
+  }
+  .bodyrestaurants,
+  .bodyrestaurants footer {
+    margin-bottom: 39px;
+  }
+}/*# sourceMappingURL=bodyrestaurantsimage.css.map */

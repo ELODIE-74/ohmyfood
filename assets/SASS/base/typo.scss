@@ -1,0 +1,36 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --color-primary: #9356dc;
+  --color-secondary: #ff79da;
+  --color-tertiaire: #99e2d0;
+  --color-placeholder-header: #d3d3d3;
+  --color-back-body: #e5e7e9;
+  --color-police-text: #000;
+  --color-body-origine: #fff;
+  --color-header: #f6f6f6;
+  --color-shadow: #85929e;
+  --color-shadow-reservation: #cacfd2;
+  --color-footer: #353434;
+  --color-icones: grey;
+  --color-texte-boutonnouveau: green;
+  --color-footer: #353434;
+  --color-loader-text: #1e90ff;
+}
+
+body {
+  background-color: var(--color-body-origine);
+  margin: 0;
+
+  .logoposition {
+    font-family: "Shrikhand";
+  }
+  p {
+    font-family: "Roboto";
+  }
+  h1 {
+    font-weight: bold;
+  }
+}

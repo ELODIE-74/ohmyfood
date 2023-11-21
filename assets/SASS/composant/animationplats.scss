@@ -1,0 +1,117 @@
+/*Animation plats restaurants*/
+.platsRestaurants:nth-child(2) h4 {
+  animation-delay: 1.5s;
+}
+.platsRestaurants:nth-child(2) .plats > :nth-child(1) {
+  animation-delay: 1.6s;
+}
+.platsRestaurants:nth-child(2) .plats > :nth-child(2) {
+  animation-delay: 1.7s;
+}
+.platsRestaurants:nth-child(2) .plats > :nth-child(3) {
+  animation-delay: 1.8s;
+}
+.platsRestaurants:nth-child(2) .plats > :nth-child(4) {
+  animation-delay: 1.9s;
+}
+.platsRestaurants:nth-child(3) h4 {
+  animation-delay: 2s;
+}
+.platsRestaurants:nth-child(3) .plats > :nth-child(1) {
+  animation-delay: 2.1s;
+}
+.platsRestaurants:nth-child(3) .plats > :nth-child(2) {
+  animation-delay: 2.2s;
+}
+.platsRestaurants:nth-child(3) .plats > :nth-child(3) {
+  animation-delay: 2.3s;
+}
+.platsRestaurants:nth-child(3) .plats > :nth-child(4) {
+  animation-delay: 2.4s;
+}
+.platsRestaurants:nth-child(4) h4 {
+  animation-delay: 2.5s;
+}
+.platsRestaurants:nth-child(4) .plats > :nth-child(1) {
+  animation-delay: 2.6s;
+}
+.platsRestaurants:nth-child(4) .plats > :nth-child(2) {
+  animation-delay: 2.7s;
+}
+.platsRestaurants:nth-child(4) .plats > :nth-child(3) {
+  animation-delay: 2.8s;
+}
+.platsRestaurants:nth-child(4) .plats > :nth-child(4) {
+  animation-delay: 2.9s;
+}
+.platsRestaurants .menusPlatsContent .plats {
+  font-family: "roboto";
+  animation: animationPlats 0.8s backwards;
+}
+@keyframes animationPlats {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(1%);
+  }
+}
+.menusrestaurants {
+  .platsRestaurants {
+    .plats {
+      &:hover {
+        .plats-valide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--color-tertiaire);
+          min-width: 60px;
+          height: 76px;
+          border-radius: 0 15px 15px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          margin-top: -73px;
+          right: -62px;
+          margin-right: 10px;
+          transform: translateX(-62px);
+          transition: transform 750ms ease;
+          i {
+            transform: rotate(360deg);
+            transition: transform 1000ms ease;
+          }
+        }
+        .fa-solid {
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 15px;
+          line-height: 18px;
+          color: var(--color-tertiaire);
+        }
+        .prixplats {
+          transform: translateX(-62px);
+          transition: transform 750ms ease;
+        }
+        .fa-check {
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          border-radius: 20px;
+          background-color: #fff;
+          padding-bottom: 0.5px;
+        }
+      }
+    }
+  }
+}
+/*Animation Plats restaurants*/
+/*version css pages restaurants*/

@@ -1,0 +1,91 @@
+/*section fonctionnement*/
+.Fonctionnement .Orientationalignement {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-left: -10px;
+  gap: 15px;
+  padding-bottom: 0;
+}
+.Fonctionnement .Title {
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  padding-left: 12px;
+}
+.Fonctionnement .alignement .chiffre {
+  position: absolute;
+  z-index: 1;
+  padding-top: 4px;
+  font-size: large;
+  color: var(--color-body-origine);
+  background-color: var(--color-primary);
+  text-align: center;
+  border-radius: 100px;
+  margin-top: 32px;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+}
+.Fonctionnement .alignement .btnPaintMenu {
+  position: relative;
+  text-align: center;
+  width: 280px;
+  height: 65px;
+  background-color: var(--color-header);
+  color: var(--color-police-text);
+  border-radius: 20px;
+  border: none;
+  padding: 10px 12px 10px 12px;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.1));
+  margin-top: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.Fonctionnement .alignement .btnPaintMenu:hover {
+  opacity: 2;
+  background-color: #fff;
+  transition: all 50ms ease-in-out;
+}
+.Fonctionnement .alignement i {
+  margin-right: 15px;
+  color: var(--color-icones);
+}
+.Fonctionnement .alignement .fa-store {
+  color: var(--color-primary);
+}
+@media only screen and (min-width: 1024px) {
+  .Fonctionnement .Orientationalignement {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .Fonctionnement .alignement .btnPaintMenu {
+    width: 275px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  .Fonctionnement h2 {
+    display: flex;
+    margin-left: 8%;
+  }
+  .Fonctionnement .fa-store {
+    color: var(--color-primary);
+  }
+}
+
+.Fonctionnement,
+.Restaurants-cardsNew {
+  margin-bottom: 50px;
+}
+
+/*section fonctionnement*//*# sourceMappingURL=buttonfonctionnement.css.map */
