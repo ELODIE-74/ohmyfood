@@ -254,11 +254,15 @@ header,
     margin-left: 10px;
     margin-bottom: 50px;
   }
+  .Fonctionnement .alignement {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .Fonctionnement .alignement .btnPaintMenu {
-    width: 275px;
+    width: 260px;
     padding: 15px;
     margin-top: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .Fonctionnement h2 {
     display: flex;
@@ -350,6 +354,7 @@ header,
   padding-right: 0;
   padding-left: 0;
   margin-left: -8px;
+  margin-right: -8px;
 }
 .cards img {
   width: 100%;
