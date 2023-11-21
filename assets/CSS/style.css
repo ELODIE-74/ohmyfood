@@ -268,10 +268,12 @@ header,
     color: var(--color-primary);
   }
 }
+
 .Fonctionnement,
 .Restaurants-cardsNew {
   margin-bottom: 50px;
 }
+
 /*section fonctionnement*/
 .Restaurants-cardsNew {
   display: flex;
@@ -289,12 +291,8 @@ header,
     display: flex;
     margin-left: 8%;
   }
-  .Restaurants-cardsNew,
-  h2 {
-    margin-top: 20px;
-  }
   .Restaurants-cardsNew .cards {
-    width: 90%;
+    width: 85%;
     height: 310px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -316,13 +314,12 @@ header,
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 10px;
-    row-gap: 30px;
-    /*padding-left: 15px;*/
-    padding-left: -140px;
-    padding-right: 140px;
+    row-gap: 15px;
+    margin-top: 20px;
   }
   .Restaurants-cardsNew .directionrCards .cards {
-    margin-left: 20px;
+    margin-left: -25px;
+    margin-right: 50px;
   }
 }
 .Restaurants-cardsNew .title {
@@ -891,4 +888,4 @@ footer {
 }
 
 /*Animation Plats restaurants*/
-/*version css pages restaurants*/ /*# sourceMappingURL=style.css.map */
+/*version css pages restaurants*//*# sourceMappingURL=style.css.map */
