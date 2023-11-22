@@ -13,6 +13,12 @@
     }
   ],
   "liveSassCompile.settings.savePath": "/assets/CSS/",
+  "liveSassCompile.settings.excludeList": [
+    "**/SASS/base/*",
+    "**/SASS/composant/*",
+    "**/SASS/layout/*",
+    "**/SASS/pages/*"
+  ],
   "liveSassCompile.settings.includeItems": [],
   "liveSassCompile.settings.forceBaseDirectory": "",
   "liveSassCompile.settings.autoprefix": [],
