@@ -223,7 +223,7 @@ header,
 }
 .Fonctionnement .alignement .btnPaintMenu {
   position: relative;
-  text-align: center;
+  text-align: start;
   width: 280px;
   height: 65px;
   background-color: var(--color-header);
@@ -231,6 +231,7 @@ header,
   border-radius: 20px;
   border: none;
   padding: 10px 12px 10px 12px;
+  padding-left: 20px;
   font-size: medium;
   font-weight: bold;
   text-decoration: none;
@@ -261,6 +262,9 @@ header,
   .Fonctionnement .alignement {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .Fonctionnement .alignement .chiffre {
+    margin-top: 28px;
   }
   .Fonctionnement .alignement .btnPaintMenu {
     width: 260px;
