@@ -51,9 +51,9 @@ footer i {
     flex-direction: row-reverse;
     justify-content: flex-start;
     font-size: medium;
-    margin-right: 30px;
+    /*margin-right: 30px;*/
     font-family: "Roboto";
-    width: 100%;
+    /*width: 100%;*/
   }
   footer .imglogobas {
     width: 100px;
