@@ -253,28 +253,31 @@ header,
   color: var(--color-primary);
 }
 @media only screen and (min-width: 1024px) {
+  .Fonctionnement {
+    padding-left: 30px;
+  }
   .Fonctionnement .Orientationalignement {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 50px;
-  }
-  .Fonctionnement .alignement {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 80px;
+    padding-left: 80px;
+    width: 85%;
   }
   .Fonctionnement .alignement .chiffre {
     margin-top: 28px;
   }
   .Fonctionnement .alignement .btnPaintMenu {
-    width: 260px;
+    width: 100%;
     padding: 15px;
     margin-top: 5px;
     margin-right: 5px;
   }
   .Fonctionnement h2 {
-    display: flex;
-    margin-left: 8%;
+    flex-grow: 1;
+    margin-left: 100px;
   }
   .Fonctionnement .fa-store {
     color: var(--color-primary);
@@ -301,6 +304,7 @@ header,
 @media only screen and (min-width: 1024px) {
   .Restaurants-cardsNew {
     padding-bottom: 10px;
+    padding-left: 30px;
   }
   .Restaurants-cardsNew .cards {
     width: 85%;
@@ -334,7 +338,7 @@ header,
   }
   .Restaurants-cardsNew .title {
     flex-grow: 1;
-    padding-left: 120px;
+    padding-left: 100px;
   }
 }
 

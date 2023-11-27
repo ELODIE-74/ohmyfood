@@ -1,6 +1,7 @@
 .Restaurants-cardsNew {
   @media only screen and (min-width: 1024px) {
     padding-bottom: 10px;
+    padding-left: 30px;
     .cards {
       width: 85%;
       height: 310px;
@@ -33,7 +34,7 @@
     }
     .title {
       flex-grow: 1;
-      padding-left: 120px;
+      padding-left: 100px;
     }
   }
   display: flex;
