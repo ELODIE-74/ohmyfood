@@ -1,9 +1,6 @@
 .Restaurants-cardsNew {
   @media only screen and (min-width: 1024px) {
-    h2 {
-      display: flex;
-      margin-left: 8%;
-    }
+    padding-bottom: 10px;
     .cards {
       width: 85%;
       height: 310px;
@@ -34,6 +31,10 @@
         margin-right: 50px;
       }
     }
+    .title {
+      flex-grow: 1;
+      padding-left: 120px;
+    }
   }
   display: flex;
   justify-content: center;
@@ -44,21 +45,17 @@
   background-color: var(--color-header);
   padding-bottom: 50px;
   margin-bottom: 0;
-  .title {
-    display: flex;
-    justify-content: flex-start;
-    font-size: x-large;
-    font-weight: bold;
-    padding-left: 10px;
-    max-width: 100vw;
-  }
+}
+.title {
+  flex-grow: 1;
+  padding-left: 10px;
 }
 .directionrCards {
   display: flex;
   flex-direction: column;
-  margin-left: -130px;
+  margin-left: -125px;
   margin-top: 10px;
-  width: 100vw;
+  width: 100%;
 }
 .cards {
   background-color: var(--color-body-origine);
@@ -70,8 +67,9 @@
   padding-top: 0;
   padding-right: 0;
   padding-left: 0;
-  margin-left: -8px;
-  margin-right: -8px;
+  margin-left: -7px;
+  margin-right: 4.5px;
+
   img {
     width: 100%;
     height: 190px;
