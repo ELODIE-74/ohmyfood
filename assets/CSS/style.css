@@ -774,19 +774,19 @@ footer {
   animation-delay: 1.5s;
 }
 
-.platsRestaurants:nth-child(2) .plats > :nth-child(1) {
+.platsRestaurants:nth-child(2) .menusPlatsContent > :nth-child(1) {
   animation-delay: 1.6s;
 }
 
-.platsRestaurants:nth-child(2) .plats > :nth-child(2) {
+.platsRestaurants:nth-child(2) .menusPlatsContent > :nth-child(2) {
   animation-delay: 1.7s;
 }
 
-.platsRestaurants:nth-child(2) .plats > :nth-child(3) {
+.platsRestaurants:nth-child(2) .menusPlatsContent > :nth-child(3) {
   animation-delay: 1.8s;
 }
 
-.platsRestaurants:nth-child(2) .plats > :nth-child(4) {
+.platsRestaurants:nth-child(2) .menusPlatsContent > :nth-child(4) {
   animation-delay: 1.9s;
 }
 
@@ -794,19 +794,19 @@ footer {
   animation-delay: 2s;
 }
 
-.platsRestaurants:nth-child(3) .plats > :nth-child(1) {
+.platsRestaurants:nth-child(3) .menusPlatsContent > :nth-child(1) {
   animation-delay: 2.1s;
 }
 
-.platsRestaurants:nth-child(3) .plats > :nth-child(2) {
+.platsRestaurants:nth-child(3) .menusPlatsContent > :nth-child(2) {
   animation-delay: 2.2s;
 }
 
-.platsRestaurants:nth-child(3) .plats > :nth-child(3) {
+.platsRestaurants:nth-child(3) .menusPlatsContent > :nth-child(3) {
   animation-delay: 2.3s;
 }
 
-.platsRestaurants:nth-child(3) .plats > :nth-child(4) {
+.platsRestaurants:nth-child(3) .menusPlatsContent > :nth-child(4) {
   animation-delay: 2.4s;
 }
 
@@ -814,23 +814,24 @@ footer {
   animation-delay: 2.5s;
 }
 
-.platsRestaurants:nth-child(4) .plats > :nth-child(1) {
+.platsRestaurants:nth-child(4) .menusPlatsContent > :nth-child(1) {
   animation-delay: 2.6s;
 }
 
-.platsRestaurants:nth-child(4) .plats > :nth-child(2) {
+.platsRestaurants:nth-child(4) .menusPlatsContent > :nth-child(2) {
   animation-delay: 2.7s;
 }
 
-.platsRestaurants:nth-child(4) .plats > :nth-child(3) {
+.platsRestaurants:nth-child(4) .menusPlatsContent > :nth-child(3) {
   animation-delay: 2.8s;
 }
 
-.platsRestaurants:nth-child(4) .plats > :nth-child(4) {
+.platsRestaurants:nth-child(4) .menusPlatsContent > :nth-child(4) {
   animation-delay: 2.9s;
 }
 
-.platsRestaurants .menusPlatsContent .plats {
+.platsRestaurants,
+.menusPlatsContent .plats {
   font-family: "roboto";
   animation: animationPlats 0.8s backwards;
 }
