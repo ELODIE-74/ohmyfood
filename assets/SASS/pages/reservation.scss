@@ -17,21 +17,26 @@
       margin-top: 0px;
     }
     .btn-Explorer {
+      display: flex;
+      justify-items: center;
+      justify-content: center;
       width: 200px;
       height: 30px;
-      background: linear-gradient(#ff79da, #9356dc);
       border-radius: 1.5em;
-      padding-top: 12px;
-      padding-bottom: 10px;
-      padding-left: 5px;
-      padding-right: 5px;
+      background: linear-gradient(#ff79da, #9356dc);
+      padding: 10px 5px;
       color: var(--color-body-origine);
       font-size: medium;
       text-decoration: none;
-      cursor: pointer;
       box-shadow: 5px 3px 5px var(--color-shadow-reservation);
       text-align: center;
       margin-bottom: 10px;
+      cursor: pointer;
+      &:hover {
+        /*background: darken(#fff, 9%);*/
+        background-color: white;
+        opacity: 0.5;
+      }
     }
   }
 }
