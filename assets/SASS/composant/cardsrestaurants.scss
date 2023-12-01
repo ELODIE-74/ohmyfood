@@ -119,26 +119,24 @@
   .icone-Coeurvide {
     display: flex;
     float: right;
-    /*width: 30px;
-  height: 30px;*/
     margin-top: -40px;
     font-size: 20px;
     margin-right: 10px;
-    .fa-solid {
-      background-image: linear-gradient(#ff79da, #9356dc);
-      background-clip: text;
-      -webkit-background-clip: text;
-      margin-left: -20px;
-      color: transparent;
-      opacity: 0;
-      transition: all 50ms ease-in-out;
+  }
+  .icone-Coeurvide:hover .fa-solid:active {
+    opacity: 1;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: effetCoeur 1s forwards;
+    transition: all 50ms ease-in-out;
+  }
+  @keyframes effetCoeur {
+    0% {
+      background: linear-gradient(to bottom, transparent 50%, #ff79da 100%);
     }
-    &:hover {
-      .fa-solid {
-        &:active {
-          opacity: 1;
-        }
-      }
+    100% {
+      background: linear-gradient(to bottom, #9356dc 50%, transparent 100%);
     }
   }
 }
